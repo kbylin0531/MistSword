@@ -57,7 +57,7 @@
     'MM_BRIDGE' => '/',
     'MC_BRIDGE' => '/',
     'CA_BRIDGE' => '/',
-    'AP_BRIDGE' => '.',
+    'AP_BRIDGE' => '-',
     'PP_BRIDGE' => '-',
     'PKV_BRIDGE' => '-',
     'MASQUERADE_TAIL' => '.html',

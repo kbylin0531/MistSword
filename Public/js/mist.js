@@ -12,16 +12,6 @@ window.console = window.console || (function(){
     return c;
 })();
 
-$(document).keydown(function(event) {
-    if(event.which==9 || event.which==13){  //如果是tab键或回车键
-        event.preventDefault();
-        //TODO:自己的代码
-    }
-});
-
-
-
-
 var GenKits = {
     /**
      * 获取浏览器信息

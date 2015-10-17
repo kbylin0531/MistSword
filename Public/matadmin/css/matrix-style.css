@@ -1440,6 +1440,7 @@ form {
 	text-align: center;
 }
 .panel-right2 {
+	width: 100%;
 	background-color: #fff;
 	border-right: 1px solid #dddddd;
 	position: relative;

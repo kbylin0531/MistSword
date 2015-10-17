@@ -2,23 +2,46 @@
 <html lang="en">
 <head>
     <title>
-        {block name="title"}{/block}
+        {if isset($page_title)}
+            {$title}
+        {else}
+            MistCMS
+        {/if}
     </title>
     <meta charset="UTF-8"/>
-    {block name="import"}{/block}
 
+    <!-- 通用样式文件 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/bootstrap-responsive.min.css" />
+
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/matrix-style.css" />
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/matrix-media.css" />
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/font-awesome/css/font-awesome.css" />
+
+    <!-- 目录重新定义过的-->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/js/jquery.min.js"></script>
+    <!-- 提示工具 -->
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.gritter.css" />
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.ui.custom.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.gritter.min.js"></script>
+
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/bootstrap.min.js"></script>
     <!-- 引入基础掩饰文件 -->
-    <link href="{$smarty.const.URL_PUBLIC_PATH}/css/modules/admin/index/base.css" rel="stylesheet" />
-    <script src="{$smarty.const.URL_PUBLIC_PATH}/js/modules/admin/index/base.js"></script>
+    <link href="{$smarty.const.URL_PUBLIC_PATH}/css/modules/admin/base.css" rel="stylesheet" />
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/js/modules/admin/base.js"></script>
+    {block name="import"}{/block}
 
 </head>
 <body>
+
 <!-- Logo部分 -->
 {block name="header"}
 <div id="header">
     <h1><a href="{U url='admin/member/index/index' }">MistCMS</a></h1>
 </div>
 {/block}
+
 
 <!-- 用户栏 -->
 {block name="user-nav"}
@@ -28,11 +51,11 @@
         <li class="dropdown" id="profile-messages">
             <a title="" href="javascript:void(0);" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle">
                 <i class="icon icon-user"></i>
-                <span class="text">欢迎{$username}</span>
+                <span class="text">欢迎你！{$userinfo.username}</span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-                <li><a id="show_message" href="javascript:void(0);"><i class="icon-user"></i>我的资料</a></li>
+                <li><a id="show_message" href="javascript:void(0);"><i class="icon-user"></i> 我的资料</a></li>
                 <li class="divider"></li>
                 <li><a id="show_tasks" href="javascript:void(0);"><i class="icon-check"></i> 我的任务</a></li>
             </ul>
@@ -97,7 +120,6 @@
 </div>
 {/block}
 
-
 <!-- 侧边栏 -->
 {block name="sidebar"}
 <div id="sidebar">
@@ -107,10 +129,7 @@
             {if $module['type'] === 0}
             {* 单重菜单项 *}
                 {if intval($active) == $order }
-                    <li class="active">
-                {else}
-                    <li>
-                {/if}
+                <li class="active"> {else} <li> {/if}
                 <a href="{$module.href}">
                     <i class="icon {$module.icon}"></i>
                     <span>{$module.title}</span>
@@ -118,10 +137,7 @@
             {else}
             {* 带子菜单 *}
                 {if intval($active) === $order }
-                    <li class="submenu active">
-                {else}
-                    <li class="submenu">
-                {/if}
+                <li class="submenu active"> {else}  <li class="submenu">  {/if}
                 <a href="javascript:void(0);">
                     <i class="icon {$module.icon}"></i>
                     <span>{$module.title}</span>
@@ -135,7 +151,6 @@
             {/if}
             </li>
         {/foreach}
-
 
         <!-- 快速统计 -->
         {foreach $process_bar as $key=>$val}
@@ -159,14 +174,14 @@
 </div>
 {/block}
 
+
 <!-- 内容区域 -->
 {block name="content"}{/block}
-
 
 <!-- 页脚区域 -->
 {block name="footer"}
 <div class="row-fluid">
-    <div id="footer" class="span12">{$copyright}</div>
+    <div id="footer" class="span12">{$footinfo.copyright}</div>
 </div>
 {/block}
 

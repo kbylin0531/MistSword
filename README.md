@@ -61,6 +61,8 @@
             <h1><a href="{U url='admin/member/index/indexMain' }">MatAdmin</a></h1>
         将产生同样的URL效果
 
-
+   21.Router.class.php中第 379 行注释道：
+        $_GET和$_REQUEST并不同步，当动态添加元素到$_GET中后，$_REQUEST中不会自动添加，不要理所当然地认为$_REQUEST每时每刻都是
+        $_GET和$_POST的并集合，他们只是保存HTTP服务器解析时候的状态
 国语英文对照：
 divider - 分割线

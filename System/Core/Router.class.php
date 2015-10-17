@@ -373,6 +373,11 @@ class Router{
 
         //-- 解析参数部分 --//
         self::$_components['p'] = self::translateParameters($pparts,false);
+        //URL中解析结果合并到$_GET中，$_GET的其他参数不能和之前的一样，否则会被解析结果覆盖
+        SEK::merge($_GET,self::$_components['p']);
+
+        //注意到$_GET和$_REQUEST并不同步，当动态添加元素到$_GET中后，$_REQUEST中不会自动添加
+//        SEK::dump($_REQUEST,$_GET,self::$_components['p']);
         Mist::status('parseurl_in_pathinfo_end');
     }
 

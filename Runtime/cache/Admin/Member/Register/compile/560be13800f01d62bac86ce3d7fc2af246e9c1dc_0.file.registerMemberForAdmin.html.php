@@ -1,40 +1,42 @@
-<?php /* Smarty version 3.1.24, created on 2015-10-17 15:15:37
-         compiled from "F:/Web/Webroot/MistCMS/Application/Admin/Main/View/Index/index.html" */ ?>
+<?php /* Smarty version 3.1.24, created on 2015-10-17 21:57:30
+         compiled from "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html" */ ?>
 <?php
-/*%%SmartyHeaderCode:191495621f599afd458_70834360%%*/
+/*%%SmartyHeaderCode:21061562253cae2bd41_03995712%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '9f5cf3d9137dd2933bdafb6482fe74ed05334c22' => 
+    '560be13800f01d62bac86ce3d7fc2af246e9c1dc' => 
     array (
-      0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Main/View/Index/index.html',
-      1 => 1445066135,
+      0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html',
+      1 => 1445090248,
       2 => 'file',
     ),
-    '0eab488f544b959ab3be502047a5d7b0580b8c66' => 
+    '9b2d62f252ce862644469bdc805dc5962aeeda3c' => 
     array (
-      0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Main/View/base.html',
-      1 => 1445065561,
+      0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Common/View/base.html',
+      1 => 1445088064,
       2 => 'file',
     ),
-    '4332a0730d17e4bf8234d24656db2427502102be' => 
+    'ff40b1c4b71fb3b4cdddb5618dfd0459dfae83e8' => 
     array (
-      0 => '4332a0730d17e4bf8234d24656db2427502102be',
+      0 => 'ff40b1c4b71fb3b4cdddb5618dfd0459dfae83e8',
       1 => 0,
       2 => 'string',
     ),
-    '47839c213b30bd533374e946a4c9a4cf134b0e13' => 
+    '89edefeeb37dd0b5925bb5b7cc564d727cf298f2' => 
     array (
-      0 => '47839c213b30bd533374e946a4c9a4cf134b0e13',
+      0 => '89edefeeb37dd0b5925bb5b7cc564d727cf298f2',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '191495621f599afd458_70834360',
+  'nocache_hash' => '21061562253cae2bd41_03995712',
   'variables' => 
   array (
-    'username' => 0,
+    'page_title' => 0,
+    'title' => 0,
+    'userinfo' => 0,
     'modules' => 0,
     'module' => 0,
     'active' => 0,
@@ -44,28 +46,30 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'val' => 0,
     'v' => 0,
     'key' => 0,
-    'copyright' => 0,
+    'footinfo' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5621f599c4a599_20442158',
+  'unifunc' => 'content_562253cb0575e8_06352961',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5621f599c4a599_20442158')) {
-function content_5621f599c4a599_20442158 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_562253cb0575e8_06352961')) {
+function content_562253cb0575e8_06352961 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
+$_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>
-        
+        <?php if (isset($_smarty_tpl->tpl_vars['page_title']->value)) {?>
+            <?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+
+        <?php } else { ?>
+            MistCMS
+        <?php }?>
     </title>
     <meta charset="UTF-8"/>
-    <?php
-$_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
-?>
 
     <!-- 通用样式文件 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -73,15 +77,13 @@ $_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
 /matadmin/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/css/bootstrap-responsive.min.css" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-
 
     <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/css/matrix-style.css" />
     <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/css/matrix-media.css" />
-    <link href="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/font-awesome/css/font-awesome.css" />
 
     <!-- 目录重新定义过的-->
     <?php echo '<script'; ?>
@@ -104,94 +106,66 @@ $_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
  src="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/js/bootstrap.min.js"><?php echo '</script'; ?>
 >
-    <!--<?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/jquery.flot.min.js"><?php echo '</script'; ?>
->-->
-    <!--<?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/jquery.flot.resize.min.js"><?php echo '</script'; ?>
->-->
-    <!--<?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/jquery.peity.min.js"><?php echo '</script'; ?>
->-->
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/matrix.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/matrix.dashboard.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/matrix.interface.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/matrix.form_validation.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/select2.min.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/matrix.popover.js"><?php echo '</script'; ?>
->
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/matrix.tables.js"><?php echo '</script'; ?>
->
-
-
-    <?php echo '<script'; ?>
- type="text/javascript">
-        // This function is called from the pop-up menus to transfer to
-        // a different page. Ignore if the value returned is a null string:
-        function goPage (newURL) {
-
-            // if url is empty, skip the menu dividers and reset the menu selection to default
-            if (newURL != "") {
-
-                // if url is "-", it is this page -- reset the menu:
-                if (newURL == "-" ) {
-                    resetMenu();
-                }
-                // else, send page to designated URL
-                else {
-                    document.location.href = newURL;
-                }
-            }
-        }
-
-        // resets the menu selection upon entry to this page:
-        function resetMenu() {
-            document.gomenu.selector.selectedIndex = 2;
-        }
-    <?php echo '</script'; ?>
->
-
-
-
-
     <!-- 引入基础掩饰文件 -->
     <link href="<?php echo @constant('URL_PUBLIC_PATH');?>
-/css/modules/admin/index/base.css" rel="stylesheet" />
+/css/modules/admin/base.css" rel="stylesheet" />
     <?php echo '<script'; ?>
  src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/js/modules/admin/index/base.js"><?php echo '</script'; ?>
+/js/modules/admin/base.js"><?php echo '</script'; ?>
 >
+    <?php
+$_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
+?>
+
+<link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/css/colorpicker.css" />
+<link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/css/uniform.css" />
+<link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/css/select2.css" />
+<link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/css/matrix-style.css" />
+<link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/css/matrix-media.css" />
+<link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/css/bootstrap-wysihtml5.css" />
+
+<?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/js/bootstrap-colorpicker.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/js/masked.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/js/jquery.uniform.js"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/matadmin/js/jquery.peity.min.js"><?php echo '</script'; ?>
+>
+
+
+<link href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/css/modules/admin/member/register.css" rel="stylesheet" />
+<?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/js/modules/admin/member/register.js"><?php echo '</script'; ?>
+>
+
 
 </head>
 <body>
+
 <!-- Logo部分 -->
 
 <div id="header">
     <h1><a href="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/index/index'),$_smarty_tpl);?>
 ">MistCMS</a></h1>
 </div>
+
 
 
 <!-- 用户栏 -->
@@ -202,12 +176,12 @@ $_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
         <li class="dropdown" id="profile-messages">
             <a title="" href="javascript:void(0);" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle">
                 <i class="icon icon-user"></i>
-                <span class="text">欢迎<?php echo $_smarty_tpl->tpl_vars['username']->value;?>
+                <span class="text">欢迎你！<?php echo $_smarty_tpl->tpl_vars['userinfo']->value['username'];?>
 </span>
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
-                <li><a id="show_message" href="javascript:void(0);"><i class="icon-user"></i>我的资料</a></li>
+                <li><a id="show_message" href="javascript:void(0);"><i class="icon-user"></i> 我的资料</a></li>
                 <li class="divider"></li>
                 <li><a id="show_tasks" href="javascript:void(0);"><i class="icon-check"></i> 我的任务</a></li>
             </ul>
@@ -273,7 +247,6 @@ $_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
 </div>
 
 
-
 <!-- 侧边栏 -->
 
 <div id="sidebar">
@@ -294,10 +267,7 @@ $foreach_module_Sav = $_smarty_tpl->tpl_vars['module'];
             <?php if ($_smarty_tpl->tpl_vars['module']->value['type'] === 0) {?>
             
                 <?php if (intval($_smarty_tpl->tpl_vars['active']->value) == $_smarty_tpl->tpl_vars['order']->value) {?>
-                    <li class="active">
-                <?php } else { ?>
-                    <li>
-                <?php }?>
+                <li class="active"> <?php } else { ?> <li> <?php }?>
                 <a href="<?php echo $_smarty_tpl->tpl_vars['module']->value['href'];?>
 ">
                     <i class="icon <?php echo $_smarty_tpl->tpl_vars['module']->value['icon'];?>
@@ -308,10 +278,7 @@ $foreach_module_Sav = $_smarty_tpl->tpl_vars['module'];
             <?php } else { ?>
             
                 <?php if (intval($_smarty_tpl->tpl_vars['active']->value) === $_smarty_tpl->tpl_vars['order']->value) {?>
-                    <li class="submenu active">
-                <?php } else { ?>
-                    <li class="submenu">
-                <?php }?>
+                <li class="submenu active"> <?php } else { ?>  <li class="submenu">  <?php }?>
                 <a href="javascript:void(0);">
                     <i class="icon <?php echo $_smarty_tpl->tpl_vars['module']->value['icon'];?>
 "></i>
@@ -345,7 +312,6 @@ $_smarty_tpl->tpl_vars['item'] = $foreach_item_Sav;
 $_smarty_tpl->tpl_vars['module'] = $foreach_module_Sav;
 }
 ?>
-
 
         <!-- 快速统计 -->
         <?php
@@ -402,42 +368,131 @@ $_smarty_tpl->tpl_vars['val'] = $foreach_val_Sav;
 </div>
 
 
+
 <!-- 内容区域 -->
 <?php
-$_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
+$_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
 ?>
 
 <div id="content">
-    <!--breadcrumbs-->
     <div id="content-header">
         <div id="breadcrumb">
             <a href="index.html" title="Go to Home" class="tip-bottom">
                 <i class="icon-home"></i>
-                首页
+                Home
             </a>
+            <a href="#" class="tip-bottom">Form elements</a>
+            <a href="#" class="current">Common elements</a>
         </div>
     </div>
-    <!--End-breadcrumbs-->
 
-    <!--Action boxes-->
+
     <div class="container-fluid">
-        <div class="quick-actions_homepage">
-            <ul class="quick-actions">
-                <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> 我的控制台</a> </li>
-                <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> 图表统计</a> </li>
-                <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> 插件 </a> </li>
-                <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> 表格</a> </li>
-                <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> 网格布局</a> </li>
-                <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> 表单</a> </li>
-                <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> 按钮</a> </li>
-                <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>组件</a> </li>
-                <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> 日历</a> </li>
-                <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> 错误</a> </li>
+        <div class="row-fluid">
+            <div class="span6">
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <span class="icon"> <i class="icon-align-justify"></i> </span>
+                        <h5>基本信息</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form action="#" method="get" class="form-horizontal">
 
-            </ul>
+                            <div class="control-group">
+                                <label class="control-label">用户名</label>
+                                <div class="controls">
+                                    <input type="text" name="username" class="span11" placeholder="请输入用户名"/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">昵称</label>
+                                <div class="controls">
+                                    <input type="text" name="nickname" class="span11" value="匿名用户" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">密码</label>
+                                <div class="controls">
+                                    <input type="password" name="password" class="span11" placeholder="请输入密码"/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">重复密码</label>
+                                <div class="controls">
+                                    <input type="password" name="password_repeat" class="span11" placeholder="重复输入密码"/>
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="span6">
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <span class="icon"> <i class="icon-align-justify"></i> </span>
+                        <h5>其他</h5>
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form action="#" method="get" class="form-horizontal">
+
+                            <div class="control-group">
+                                <label class="control-label">手机</label>
+                                <div class="controls">
+                                    <input type="text" id="mobile" class="span11" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">QQ</label>
+                                <div class="controls">
+                                    <input type="text" id="qq" class="span11" placeholder=""/>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <label class="control-label">Email</label>
+                                <div class="controls">
+                                    <input type="text" id="email" class="span11" placeholder=""/>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label">性别</label>
+                                <div class="controls">
+                                    <select name="sex">
+                                        <option value="0">男</option>
+                                        <option value="1">女</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label">启用状态</label>
+                                <div class="controls">
+                                    <select name="sex">
+                                        <option value="1">启用</option>
+                                        <option value="0">禁用</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="control-group">
+                                <label class="control-label">生日</label>
+                                <div class="controls">
+                                    <div  data-date="2012/12/24" class="input-append date datepicker">
+                                        <input type="text" value="2012/12/24"  data-date-format="yyyy-mm-dd" class="span11" >
+                                        <span class="add-on"><i class="icon-th"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-
+        <button type="submit" class="btn btn-success">Save</button>
     </div>
+
 </div>
 
 
@@ -445,7 +500,7 @@ $_smarty_tpl->properties['nocache_hash'] = '191495621f599afd458_70834360';
 <!-- 页脚区域 -->
 
 <div class="row-fluid">
-    <div id="footer" class="span12"><?php echo $_smarty_tpl->tpl_vars['copyright']->value;?>
+    <div id="footer" class="span12"><?php echo $_smarty_tpl->tpl_vars['footinfo']->value['copyright'];?>
 </div>
 </div>
 
