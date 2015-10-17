@@ -10,6 +10,7 @@ use System\Exception\ClassNotFoundException;
 use System\Exception\MethodNotFoundException;
 use System\Exception\ParameterInvalidException;
 use System\Mist;
+use System\Util\SEK;
 use System\Utils\Util;
 defined('BASE_PATH') or die('No Permission!');
 /**
@@ -38,8 +39,9 @@ class Dispatcher{
      * @throws MethodNotFoundException
      * @throws ClassNotFoundException
      * @throws ParameterInvalidException 参数缺失时的设置
+     * @throws \Exception
      */
-    public static function execute($modules,$ctrler,$action,$parameters=null){
+    public static function execute($modules,$ctrler,$action,array $parameters=array()){
         Mist::status('execute_begin');
         self::$inited or self::init();
         if(!isset($modules,$ctrler,$action)){
@@ -89,10 +91,11 @@ class Dispatcher{
                 }
             }
 
+
             //方法的参数检测
             if ($targetMethod->getNumberOfParameters()) {//有参数
                 //获取输入参数
-                $vars = null;
+                $vars = array();
                 switch(strtoupper($_SERVER['REQUEST_METHOD'])){
                     case 'POST':
                         $vars    =  array_merge($_GET,$_POST);
@@ -103,9 +106,14 @@ class Dispatcher{
                     default:
                         $vars  =  $_GET;
                 }
+//                SEK::merge($vars,$parameters);//解析的参数覆盖到常规方法获取的参数上
+//                SEK::dump($vars);
+
                 //获取方法的参数列表 ，并且按照变量名绑定
                 $methodParams = $targetMethod->getParameters();
                 $args = array();
+
+                //遍历方法的参数
                 foreach ($methodParams as $param) {
                     $parameterName = $param->getName();
                     if(isset($vars[$parameterName])){

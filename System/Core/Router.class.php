@@ -7,6 +7,7 @@
  */
 namespace System\Core;
 use System\Mist;
+use System\Util\SEK;
 use System\Utils\Util;
 defined('BASE_PATH') or die('No Permission!');
 
@@ -49,7 +50,7 @@ class Router{
         'URL_COMPATIBLE_VARIABLE' => 'pathinfo',
 
         //兼容模式和PATH_INFO模式下的解析配置，也是URL生成配置
-        'MM_BRIDGE'     => '+',//模块与模块之间的连接桥
+        'MM_BRIDGE'     => '/',//模块与模块之间的连接桥
         'MC_BRIDGE'     => '/',
         'CA_BRIDGE'     => '/',
         'AP_BRIDGE'     => '-',//*** 必须保证操作与控制器之间的符号将是$_SERVER['PATH_INFO']字符串中第一个出现的
@@ -314,6 +315,7 @@ class Router{
         //-- 解析MCA部分 --//
         //逆向检查CA是否存在衔接
         $capos = strrpos($mcapart,self::$_convention['CA_BRIDGE']);
+//        SEK::dump($mcapart,$capos,self::$_convention['CA_BRIDGE']);
         if(false === $capos){
             //找不到控制器与操作之间分隔符（一定不存在控制器）
             //先判断位置部分是否为空字符串来决定是否有操作名称
@@ -330,8 +332,12 @@ class Router{
             //CA存在衔接符 则说明一定存在控制器
             $mcalen = strlen($mcapart);
             $mcpart = substr($mcapart,0,$capos-$mcalen);//去除了action的部分
+
+//            SEK::dump($mcpart);
+
             if(strlen($mcapart)){
-                $mcpos = strpos($mcpart,self::$_convention['MC_BRIDGE']);
+                $mcpos = strrpos($mcpart,self::$_convention['MC_BRIDGE']);
+//                SEK::dump($mcpart,$mcpos);
                 if(false === $mcpos){
                     //不存在模块
                     if(strlen($mcpart)){

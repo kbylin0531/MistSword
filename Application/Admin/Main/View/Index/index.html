@@ -1,0 +1,96 @@
+{extends file="../base.html"}
+{block name="import"}
+    <!-- 通用样式文件 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/bootstrap-responsive.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/matrix-style.css" />
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/matrix-media.css" />
+    <link href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!-- 目录重新定义过的-->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/js/jquery.min.js"></script>
+    <!-- 提示工具 -->
+    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.gritter.css" />
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.ui.custom.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.gritter.min.js"></script>
+
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/bootstrap.min.js"></script>
+    <!--<script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/jquery.flot.min.js"></script>-->
+    <!--<script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/jquery.flot.resize.min.js"></script>-->
+    <!--<script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/jquery.peity.min.js"></script>-->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/matrix.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/matrix.dashboard.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/matrix.interface.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/matrix.form_validation.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/select2.min.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/matrix.popover.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/matrix.tables.js"></script>
+
+
+    <script type="text/javascript">
+        // This function is called from the pop-up menus to transfer to
+        // a different page. Ignore if the value returned is a null string:
+        function goPage (newURL) {
+
+            // if url is empty, skip the menu dividers and reset the menu selection to default
+            if (newURL != "") {
+
+                // if url is "-", it is this page -- reset the menu:
+                if (newURL == "-" ) {
+                    resetMenu();
+                }
+                // else, send page to designated URL
+                else {
+                    document.location.href = newURL;
+                }
+            }
+        }
+
+        // resets the menu selection upon entry to this page:
+        function resetMenu() {
+            document.gomenu.selector.selectedIndex = 2;
+        }
+    </script>
+
+
+{/block}
+
+
+{block name="content"}
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb">
+            <a href="index.html" title="Go to Home" class="tip-bottom">
+                <i class="icon-home"></i>
+                首页
+            </a>
+        </div>
+    </div>
+    <!--End-breadcrumbs-->
+
+    <!--Action boxes-->
+    <div class="container-fluid">
+        <div class="quick-actions_homepage">
+            <ul class="quick-actions">
+                <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> 我的控制台</a> </li>
+                <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> 图表统计</a> </li>
+                <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> 插件 </a> </li>
+                <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> 表格</a> </li>
+                <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> 网格布局</a> </li>
+                <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> 表单</a> </li>
+                <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> 按钮</a> </li>
+                <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>组件</a> </li>
+                <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> 日历</a> </li>
+                <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> 错误</a> </li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+{/block}

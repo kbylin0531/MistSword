@@ -206,7 +206,7 @@ final class Mist{
 
         //解析URL
         self::$_url_components = Router::parse();
-//Util::dump(self::$_url_components);exit;
+//        SEK::dump(self::$_url_components);
         //执行结果
         Dispatcher::execute(
             self::$_url_components['m'], self::$_url_components['c'],

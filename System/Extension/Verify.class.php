@@ -6,6 +6,7 @@
  * Time: 22:04
  */
 namespace System\Extension;
+use System\Exception\MistException;
 use System\Util\SEK;
 use System\Util\SessionUtil;
 
@@ -13,8 +14,8 @@ use System\Util\SessionUtil;
  * Class Verify 验证码输出类
  * @package System\Extension
  */
-class Verify {
-    protected static $config =	array(
+final class Verify {
+    private static $config =	array(
         'seKey'     =>  '784855684@qq.com',   // 验证码加密密钥
         'codeSet'   =>  '2345678abcdefhijkmnpqrstuvwxyzABCDEFGHJKLMNPQRTUVWXY',             // 验证码字符集合
         'expire'    =>  1800,            // 验证码过期时间（s）
@@ -25,7 +26,7 @@ class Verify {
         'useCurve'  =>  true,            // 是否画混淆曲线
         'useNoise'  =>  true,            // 是否添加杂点
         'imageH'    =>  40,               // 验证码图片高度
-        'imageW'    =>  182,               // 验证码图片宽度
+        'imageW'    =>  160,               // 验证码图片宽度
         'length'    =>  4,               // 验证码位数
         'fontttf'   =>  '',              // 验证码字体，不设置随机获取
         'bg'        =>  array(243, 251, 254),  // 背景颜色
@@ -33,12 +34,13 @@ class Verify {
     );
     private static $_image   = NULL;     // 验证码图片实例
     private static $_color   = NULL;     // 验证码字体颜色
+
     /**
      * 架构方法 设置参数
      * @access public
      * @param  array $config 配置参数
      */
-    public static function init(array $config){
+    public static function init(array $config=null){
         if($config){
             SEK::merge(self::$config,$config);
         }
@@ -49,8 +51,12 @@ class Verify {
      * @param string $code 用户验证码
      * @param string $id 验证码标识
      * @return bool 用户验证码是否正确
+     * @throws MistException
      */
     public static function check($code, $id = '') {
+        if(empty($code)){
+            throw new MistException('empty verify code!');
+        }
         $key = self::authcode(self::$config['seKey']).$id;
         // 验证码不能为空
         $secode = SessionUtil::get($key);

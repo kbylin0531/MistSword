@@ -18,8 +18,8 @@ use System\Utils\Util;
 class View{
 
     protected $_config = array(
-        'left_delimiter'    => '<{',
-        'right_delimiter'   => '}>',
+        'left_delimiter'    => '{',
+        'right_delimiter'   => '}',
     );
 
     /**

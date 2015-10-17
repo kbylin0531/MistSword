@@ -24,7 +24,7 @@ return array(
     'URL_COMPATIBLE_VARIABLE' => 'pathinfo',
 
     //兼容模式和PATH_INFO模式下的解析配置，也是URL生成配置
-    'MM_BRIDGE'     => '+',//模块与模块之间的连接桥
+    'MM_BRIDGE'     => '/',//模块与模块之间的连接桥
     'MC_BRIDGE'     => '/',
     'CA_BRIDGE'     => '/',
     'AP_BRIDGE'     => '.',//*** 必须保证操作与控制器之间的符号将是$_SERVER['PATH_INFO']字符串中第一个出现的

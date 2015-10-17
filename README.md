@@ -55,3 +55,12 @@
    				}
    			}
    18.ctype_digit 如果 text 字符串是一个十进制数字，就返回 TRUE  ；反之就返回 FALSE
+   19.如果不特别声明，form表单默认提交的方法是get
+   20.由于php对于方法不区分大小写，所以对于
+            <h1><a href="{U url='admin/member/index/indexmain' }">MatAdmin</a></h1>
+            <h1><a href="{U url='admin/member/index/indexMain' }">MatAdmin</a></h1>
+        将产生同样的URL效果
+
+
+国语英文对照：
+divider - 分割线
