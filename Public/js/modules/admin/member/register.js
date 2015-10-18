@@ -6,6 +6,26 @@ $(function () {
 
     var content_header = $("#content-header");
     var btn_group = content_header.find(".btn-group");
+    var submit = $("#submit");
+    var member_form = $("#member_form");
+
+    submit.click(function () {
+
+
+        member_form.submit();
+    });
+
+    $('#birthday').datetimepicker({
+        language:  'zh-CN',
+        format: 'yyyy-mm-dd',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+    });
 
     $(window).resize(function(){
         if($(window).width() > 479){

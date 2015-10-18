@@ -5408,3 +5408,208 @@ File:F:\Web\Webroot\MistCMS\Runtime\cache\Admin\Member\Register\compile\560be138
 
 
 
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html"  on line 58 "<input type="text" name="nickname" class="span11" value="mist_{time}" placeholder=""/>" unknown tag "time"
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:35
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(692): Smarty_Internal_TemplateCompilerBase->trigger_template_error('unknown tag "ti...', 35)
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(462): Smarty_Internal_TemplateCompilerBase->compileTag2('time', Array, Array)
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(1411): Smarty_Internal_TemplateCompilerBase->compileTag('time', Array)
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2303): Smarty_Internal_Templateparser->yy_r33()
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2398): Smarty_Internal_Templateparser->yy_reduce(33)
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(4, '" placeholder="...')
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{private_child_...', true)
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template), false, Object(Smarty_Internal_SmartyTemplateCompiler))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(329): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(761): Smarty_Internal_Compile_Blockclose->compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#10 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(495): Smarty_Internal_TemplateCompilerBase->callTagCompiler('blockclose', Array, Array)
+#11 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(462): Smarty_Internal_TemplateCompilerBase->compileTag2('blockclose', Array, Array)
+#12 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(1585): Smarty_Internal_TemplateCompilerBase->compileTag('blockclose', Array)
+#13 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2303): Smarty_Internal_Templateparser->yy_r57()
+#14 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2398): Smarty_Internal_Templateparser->yy_reduce(57)
+#15 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(11, '}')
+#16 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('<!DOCTYPE html>...', true)
+#17 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#18 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#19 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#20 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#21 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#22 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('registerMemberF...', NULL, NULL, NULL, true)
+#23 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('registerMemberF...', NULL, NULL, NULL)
+#24 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#25 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\RegisterController.class.php(27): System\Core\Controller->display()
+#26 [internal function]: Application\Admin\Member\Controller\RegisterController->registerMemberForAdmin()
+#27 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(131): ReflectionMethod->invoke(Object(Application\Admin\Member\Controller\RegisterController))
+#28 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Register', 'registermemberf...', Array)
+#29 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#30 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html"  on line 58 "<input type="text" name="nickname" class="span11" value="{dft_nickname}" placeholder=""/>" unknown tag "dft_nickname"
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:35
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(692): Smarty_Internal_TemplateCompilerBase->trigger_template_error('unknown tag "df...', 35)
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(462): Smarty_Internal_TemplateCompilerBase->compileTag2('dft_nickname', Array, Array)
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(1411): Smarty_Internal_TemplateCompilerBase->compileTag('dft_nickname', Array)
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2303): Smarty_Internal_Templateparser->yy_r33()
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2398): Smarty_Internal_Templateparser->yy_reduce(33)
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(4, '" placeholder="...')
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{private_child_...', true)
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template), false, Object(Smarty_Internal_SmartyTemplateCompiler))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(329): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(761): Smarty_Internal_Compile_Blockclose->compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#10 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(495): Smarty_Internal_TemplateCompilerBase->callTagCompiler('blockclose', Array, Array)
+#11 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(462): Smarty_Internal_TemplateCompilerBase->compileTag2('blockclose', Array, Array)
+#12 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(1585): Smarty_Internal_TemplateCompilerBase->compileTag('blockclose', Array)
+#13 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2303): Smarty_Internal_Templateparser->yy_r57()
+#14 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2398): Smarty_Internal_Templateparser->yy_reduce(57)
+#15 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(11, '}')
+#16 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('<!DOCTYPE html>...', true)
+#17 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#18 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#19 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#20 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#21 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#22 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('registerMemberF...', NULL, NULL, NULL, true)
+#23 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('registerMemberF...', NULL, NULL, NULL)
+#24 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#25 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\RegisterController.class.php(28): System\Core\Controller->display()
+#26 [internal function]: Application\Admin\Member\Controller\RegisterController->registerMemberForAdmin()
+#27 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(131): ReflectionMethod->invoke(Object(Application\Admin\Member\Controller\RegisterController))
+#28 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Register', 'registermemberf...', Array)
+#29 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#30 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html"  on line 58 "<input type="text" name="nickname" class="span11" value="{dft_nickname}" placeholder=""/>" unknown tag "dft_nickname"
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:35
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(692): Smarty_Internal_TemplateCompilerBase->trigger_template_error('unknown tag "df...', 35)
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(462): Smarty_Internal_TemplateCompilerBase->compileTag2('dft_nickname', Array, Array)
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(1411): Smarty_Internal_TemplateCompilerBase->compileTag('dft_nickname', Array)
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2303): Smarty_Internal_Templateparser->yy_r33()
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2398): Smarty_Internal_Templateparser->yy_reduce(33)
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(4, '" placeholder="...')
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{private_child_...', true)
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template), false, Object(Smarty_Internal_SmartyTemplateCompiler))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(329): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'content')
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(761): Smarty_Internal_Compile_Blockclose->compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#10 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(495): Smarty_Internal_TemplateCompilerBase->callTagCompiler('blockclose', Array, Array)
+#11 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(462): Smarty_Internal_TemplateCompilerBase->compileTag2('blockclose', Array, Array)
+#12 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(1585): Smarty_Internal_TemplateCompilerBase->compileTag('blockclose', Array)
+#13 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2303): Smarty_Internal_Templateparser->yy_r57()
+#14 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2398): Smarty_Internal_Templateparser->yy_reduce(57)
+#15 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(11, '}')
+#16 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('<!DOCTYPE html>...', true)
+#17 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#18 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#19 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#20 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#21 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#22 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('registerMemberF...', NULL, NULL, NULL, true)
+#23 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('registerMemberF...', NULL, NULL, NULL)
+#24 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#25 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\RegisterController.class.php(28): System\Core\Controller->display()
+#26 [internal function]: Application\Admin\Member\Controller\RegisterController->registerMemberForAdmin()
+#27 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(131): ReflectionMethod->invoke(Object(Application\Admin\Member\Controller\RegisterController))
+#28 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Register', 'registermemberf...', Array)
+#29 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#30 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html"  on line 27 "$("#form1").validation({icon:true});"  - Unexpected ":", expected one of: "}"
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:25
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(2, ':')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(2, ':')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{private_child_...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(184): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template), false, Object(Smarty_Internal_SmartyTemplateCompiler))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_compile_block.php(329): Smarty_Internal_Compile_Block::compileChildBlock(Object(Smarty_Internal_SmartyTemplateCompiler), 'import')
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(761): Smarty_Internal_Compile_Blockclose->compile(Array, Object(Smarty_Internal_SmartyTemplateCompiler), Array, NULL, NULL)
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(495): Smarty_Internal_TemplateCompilerBase->callTagCompiler('blockclose', Array, Array)
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(462): Smarty_Internal_TemplateCompilerBase->compileTag2('blockclose', Array, Array)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(1585): Smarty_Internal_TemplateCompilerBase->compileTag('blockclose', Array)
+#10 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2303): Smarty_Internal_Templateparser->yy_r57()
+#11 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2398): Smarty_Internal_Templateparser->yy_reduce(57)
+#12 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(11, '}')
+#13 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('<!DOCTYPE html>...', true)
+#14 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#15 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#16 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#17 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#18 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#19 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('registerMemberF...', NULL, NULL, NULL, true)
+#20 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('registerMemberF...', NULL, NULL, NULL)
+#21 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#22 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\RegisterController.class.php(28): System\Core\Controller->display()
+#23 [internal function]: Application\Admin\Member\Controller\RegisterController->registerMemberForAdmin()
+#24 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(131): ReflectionMethod->invoke(Object(Application\Admin\Member\Controller\RegisterController))
+#25 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Register', 'registermemberf...', Array)
+#26 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#27 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::index() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'index')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'index', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+

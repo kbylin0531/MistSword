@@ -138,7 +138,7 @@ final class Mist{
 
         //-- 常用URL可以访问的路径 --//
         define('URL_BASE_PATH', (SEK::isHTTPS() ? 'https://' :'http://').$_SERVER['HTTP_HOST'].dirname($_SERVER['SCRIPT_NAME']).'/');
-        define('URL_PUBLIC_PATH',URL_BASE_PATH.'Public/');
+        define('URL_PUBLIC_PATH',URL_BASE_PATH.'Public');
 
         self::status('init_begin');
         //-- 时间处理句柄注册 --//

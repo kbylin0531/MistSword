@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2015-10-17 21:57:30
+<?php /* Smarty version 3.1.24, created on 2015-10-18 10:24:10
          compiled from "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html" */ ?>
 <?php
-/*%%SmartyHeaderCode:21061562253cae2bd41_03995712%%*/
+/*%%SmartyHeaderCode:21205562302ca831aa9_56072216%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,29 +9,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '560be13800f01d62bac86ce3d7fc2af246e9c1dc' => 
     array (
       0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Register/registerMemberForAdmin.html',
-      1 => 1445090248,
+      1 => 1445132577,
       2 => 'file',
     ),
     '9b2d62f252ce862644469bdc805dc5962aeeda3c' => 
     array (
       0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Common/View/base.html',
-      1 => 1445088064,
+      1 => 1445135045,
       2 => 'file',
     ),
-    'ff40b1c4b71fb3b4cdddb5618dfd0459dfae83e8' => 
+    '06a3a7e9f9892c8b3f6b325e8c11739099bfc252' => 
     array (
-      0 => 'ff40b1c4b71fb3b4cdddb5618dfd0459dfae83e8',
+      0 => '06a3a7e9f9892c8b3f6b325e8c11739099bfc252',
       1 => 0,
       2 => 'string',
     ),
-    '89edefeeb37dd0b5925bb5b7cc564d727cf298f2' => 
+    '96e038485dfc6c3a0aceb36add78516aa55a1bb4' => 
     array (
-      0 => '89edefeeb37dd0b5925bb5b7cc564d727cf298f2',
+      0 => '96e038485dfc6c3a0aceb36add78516aa55a1bb4',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '21061562253cae2bd41_03995712',
+  'nocache_hash' => '21205562302ca831aa9_56072216',
   'variables' => 
   array (
     'page_title' => 0,
@@ -50,13 +50,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_562253cb0575e8_06352961',
+  'unifunc' => 'content_562302ca9d6259_71150776',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_562253cb0575e8_06352961')) {
-function content_562253cb0575e8_06352961 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_562302ca9d6259_71150776')) {
+function content_562302ca9d6259_71150776 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
+$_smarty_tpl->properties['nocache_hash'] = '21205562302ca831aa9_56072216';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -74,9 +74,9 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
     <!-- 通用样式文件 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/css/bootstrap.min.css" />
+/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/css/bootstrap-responsive.min.css" />
+/bootstrap/css/bootstrap-theme.min.css" />
 
     <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/css/matrix-style.css" />
@@ -90,6 +90,10 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
  src="<?php echo @constant('URL_PUBLIC_PATH');?>
 /js/jquery.min.js"><?php echo '</script'; ?>
 >
+    <?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/bootstrap/js/bootstrap.min.js"><?php echo '</script'; ?>
+>
     <!-- 提示工具 -->
     <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /plugin/notify/jquery.gritter.css" />
@@ -102,10 +106,6 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
 /plugin/notify/jquery.gritter.min.js"><?php echo '</script'; ?>
 >
 
-    <?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/bootstrap.min.js"><?php echo '</script'; ?>
->
     <!-- 引入基础掩饰文件 -->
     <link href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /css/modules/admin/base.css" rel="stylesheet" />
@@ -114,11 +114,9 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
 /js/modules/admin/base.js"><?php echo '</script'; ?>
 >
     <?php
-$_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
+$_smarty_tpl->properties['nocache_hash'] = '21205562302ca831aa9_56072216';
 ?>
 
-<link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/css/colorpicker.css" />
 <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/css/uniform.css" />
 <link rel="stylesheet" href="<?php echo @constant('URL_PUBLIC_PATH');?>
@@ -132,21 +130,12 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
 
 <?php echo '<script'; ?>
  src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/bootstrap-colorpicker.js"><?php echo '</script'; ?>
->
-<?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/js/masked.js"><?php echo '</script'; ?>
 >
 <?php echo '<script'; ?>
  src="<?php echo @constant('URL_PUBLIC_PATH');?>
 /matadmin/js/jquery.uniform.js"><?php echo '</script'; ?>
 >
-<?php echo '<script'; ?>
- src="<?php echo @constant('URL_PUBLIC_PATH');?>
-/matadmin/js/jquery.peity.min.js"><?php echo '</script'; ?>
->
-
 
 <link href="<?php echo @constant('URL_PUBLIC_PATH');?>
 /css/modules/admin/member/register.css" rel="stylesheet" />
@@ -154,6 +143,18 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
  src="<?php echo @constant('URL_PUBLIC_PATH');?>
 /js/modules/admin/member/register.js"><?php echo '</script'; ?>
 >
+
+<link  href="<?php echo @constant('URL_PUBLIC_PATH');?>
+/plugin/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen" />
+<?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/plugin/datetimepicker/js/bootstrap-datetimepicker.js" type="text/javascript"  charset="UTF-8"><?php echo '</script'; ?>
+>
+<?php echo '<script'; ?>
+ src="<?php echo @constant('URL_PUBLIC_PATH');?>
+/plugin/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js" type="text/javascript"  charset="UTF-8"><?php echo '</script'; ?>
+>
+
 
 
 </head>
@@ -371,7 +372,7 @@ $_smarty_tpl->tpl_vars['val'] = $foreach_val_Sav;
 
 <!-- 内容区域 -->
 <?php
-$_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
+$_smarty_tpl->properties['nocache_hash'] = '21205562302ca831aa9_56072216';
 ?>
 
 <div id="content">
@@ -385,7 +386,6 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
             <a href="#" class="current">Common elements</a>
         </div>
     </div>
-
 
     <div class="container-fluid">
         <div class="row-fluid">
@@ -401,25 +401,26 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
                             <div class="control-group">
                                 <label class="control-label">用户名</label>
                                 <div class="controls">
-                                    <input type="text" name="username" class="span11" placeholder="请输入用户名"/>
+                                    <input type="text" name="username" class="span11" placeholder=""/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">昵称</label>
                                 <div class="controls">
-                                    <input type="text" name="nickname" class="span11" value="匿名用户" placeholder=""/>
+                                    <input type="text" name="nickname" class="span11" value="<?php echo $_smarty_tpl->tpl_vars['dft_nickname']->value;?>
+" placeholder=""/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label">密码</label>
                                 <div class="controls">
-                                    <input type="password" name="password" class="span11" placeholder="请输入密码"/>
+                                    <input type="password" name="password" class="span11" placeholder=""/>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">重复密码</label>
+                                <label class="control-label">确认密码</label>
                                 <div class="controls">
-                                    <input type="password" name="password_repeat" class="span11" placeholder="重复输入密码"/>
+                                    <input type="password" name="password_repeat" class="span11" placeholder=""/>
                                 </div>
                             </div>
 
@@ -434,7 +435,8 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
                         <h5>其他</h5>
                     </div>
                     <div class="widget-content nopadding">
-                        <form action="#" method="get" class="form-horizontal">
+                        <form action="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/register/createMember'),$_smarty_tpl);?>
+" id="member_form" method="post" class="form-horizontal">
 
                             <div class="control-group">
                                 <label class="control-label">手机</label>
@@ -475,14 +477,11 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
                                 </div>
                             </div>
 
-
                             <div class="control-group">
                                 <label class="control-label">生日</label>
-                                <div class="controls">
-                                    <div  data-date="2012/12/24" class="input-append date datepicker">
-                                        <input type="text" value="2012/12/24"  data-date-format="yyyy-mm-dd" class="span11" >
-                                        <span class="add-on"><i class="icon-th"></i></span>
-                                    </div>
+                                <div class="controls" data-date="" data-date-format="yyyy-MM-dd"
+                                      data-link-format="yyyy-mm-dd">
+                                    <input size="16"  id="birthday" type="text" name="birthday" value="" placeholder="1990-01-01" />
                                 </div>
                             </div>
                         </form>
@@ -490,7 +489,7 @@ $_smarty_tpl->properties['nocache_hash'] = '21061562253cae2bd41_03995712';
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-success">Save</button>
+        <button type="button" id="submit" class="btn btn-success">Save</button>
     </div>
 
 </div>

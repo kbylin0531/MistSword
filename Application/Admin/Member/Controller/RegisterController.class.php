@@ -23,6 +23,7 @@ class RegisterController extends AdminController{
      */
     public function registerMemberForAdmin(){
 
+        $this->assign('dft_nickname','mist_'.time().'_'.mt_rand(0,1000));
         $this->assignGeneralData();
         $this->display();
     }
@@ -33,6 +34,10 @@ class RegisterController extends AdminController{
      */
     public function registerMember(){
         $this->display();
+    }
+
+    public function createMember(){
+
     }
 
 }

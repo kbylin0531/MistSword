@@ -8,25 +8,64 @@
             MistCMS
         {/if}
     </title>
+
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- 通用样式文件 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/bootstrap-responsive.min.css" />
+    <!-- The styles -->
+    <link href="{$smarty.const.URL_PUBLIC_PATH}/charisma/css/bootstrap-cerulean.min.css" rel="stylesheet" />
+    <link href="{$smarty.const.URL_PUBLIC_PATH}/charisma/css/charisma-app.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/matrix-style.css" />
-    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/css/matrix-media.css" />
-    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/matadmin/font-awesome/css/font-awesome.css" />
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/css/jquery.noty.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/css/noty_theme_default.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/css/elfinder.min.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/css/elfinder.theme.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/css/uploadify.css' rel='stylesheet'>
+    <link href='{$smarty.const.URL_PUBLIC_PATH}/charisma/css/animate.min.css' rel='stylesheet'>
 
-    <!-- 目录重新定义过的-->
+    <!-- jQuery and Bootstrap JavaScript File -->
     <script src="{$smarty.const.URL_PUBLIC_PATH}/js/jquery.min.js"></script>
-    <!-- 提示工具 -->
-    <link rel="stylesheet" href="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.gritter.css" />
-    <script src="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.ui.custom.js"></script>
-    <script src="{$smarty.const.URL_PUBLIC_PATH}/plugin/notify/jquery.gritter.min.js"></script>
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <script src="{$smarty.const.URL_PUBLIC_PATH}/matadmin/js/bootstrap.min.js"></script>
+    <!-- library for cookie management -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.cookie.js"></script>
+    <!-- calender plugin -->
+    <script src='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/moment/min/moment.min.js'></script>
+    <script src='{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/fullcalendar/dist/fullcalendar.min.js'></script>
+    <!-- data table plugin -->
+    <script src='{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.dataTables.min.js'></script>
+    <!-- select or dropdown enhancer -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/chosen/chosen.jquery.min.js"></script>
+    <!-- plugin for gallery image view -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/colorbox/jquery.colorbox-min.js"></script>
+    <!-- notification plugin -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.noty.js"></script>
+    <!-- library for making tables responsive -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/responsive-tables/responsive-tables.js"></script>
+    <!-- tour plugin -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/bower_components/bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+    <!-- star rating plugin -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.raty.min.js"></script>
+    <!-- for iOS style toggle switch -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.iphone.toggle.js"></script>
+    <!-- autogrowing textarea plugin -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.autogrow-textarea.js"></script>
+    <!-- multiple file upload plugin -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.uploadify-3.1.min.js"></script>
+    <!-- history.js for cross-browser state change on ajax -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/jquery.history.js"></script>
+
+
+    <!-- application script for Charisma demo -->
+    <script src="{$smarty.const.URL_PUBLIC_PATH}/charisma/js/charisma.js"></script>
+
     <!-- 引入基础掩饰文件 -->
     <link href="{$smarty.const.URL_PUBLIC_PATH}/css/modules/admin/base.css" rel="stylesheet" />
     <script src="{$smarty.const.URL_PUBLIC_PATH}/js/modules/admin/base.js"></script>
@@ -35,155 +74,7 @@
 </head>
 <body>
 
-<!-- Logo部分 -->
-{block name="header"}
-<div id="header">
-    <h1><a href="{U url='admin/member/index/index' }">MistCMS</a></h1>
-</div>
-{/block}
-
-
-<!-- 用户栏 -->
-{block name="user-nav"}
-<div id="user-nav" class="navbar navbar-inverse">
-    <ul class="nav">
-        <!-- 可以下拉 -->
-        <li class="dropdown" id="profile-messages">
-            <a title="" href="javascript:void(0);" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle">
-                <i class="icon icon-user"></i>
-                <span class="text">欢迎你！{$userinfo.username}</span>
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a id="show_message" href="javascript:void(0);"><i class="icon-user"></i> 我的资料</a></li>
-                <li class="divider"></li>
-                <li><a id="show_tasks" href="javascript:void(0);"><i class="icon-check"></i> 我的任务</a></li>
-            </ul>
-        </li>
-        <li class="dropdown" id="menu-messages">
-            <a href="javascript:void(0);" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
-                <i class="icon icon-envelope"></i>
-                <span class="text">消息</span>
-                <span id="message_sum_box" class="label label-important"></span>
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-                <li>
-                    <a class="sAdd" title="" href="javascript:void(0);">
-                        <i class="icon-plus"></i>
-                        新消息 &nbsp;&nbsp;&nbsp;
-                        <span id="message_new_box" class="label label-important"></span>
-                    </a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a class="sInbox" title="" href="javascript:void(0);">
-                        <i class="icon-envelope"></i>
-                        收件箱 &nbsp;&nbsp;&nbsp;
-                        <span id="message_receive_box" class="label label-important"></span>
-                    </a>
-                </li>
-                <li class="divider"></li>
-                <li>
-                    <a class="sOutbox" title="" href="javascript:void(0);">
-                        <i class="icon-arrow-up"></i>
-                        发件箱 &nbsp;&nbsp;&nbsp;
-                        <span id="message_send_box" class="label label-important"></span>
-                    </a>
-                </li>
-            </ul>
-        </li>
-
-        <!-- 不能下拉 -->
-        <li class="">
-            <a title="" href="javascript:void(0);"><i class="icon icon-cog"></i>
-                <span id="show_setting" class="text">设置</span>
-            </a>
-        </li>
-        <li class="">
-            <a title="" href="{U url='admin/member/public/logout'}">
-                <i class="icon icon-share-alt"></i>
-                <span id="to_logout" class="text">退出</span>
-            </a>
-        </li>
-    </ul>
-</div>
-{/block}
-
-<!-- 搜索栏 -->
-{block name="search"}
-<div id="search">
-    <input type="text" id="search_input" placeholder="输入搜索内容..."/>
-    <button type="submit" id="search_submit" class="tip-bottom" title="Search">
-        <i class="icon-search icon-white"></i>
-    </button>
-</div>
-{/block}
-
-<!-- 侧边栏 -->
-{block name="sidebar"}
-<div id="sidebar">
-    <a href="javascript:void(0);" class="visible-phone"><i class="icon icon-home"></i> 控制台</a>
-    <ul>
-        {foreach $modules as $order=>$module}
-            {if $module['type'] === 0}
-            {* 单重菜单项 *}
-                {if intval($active) == $order }
-                <li class="active"> {else} <li> {/if}
-                <a href="{$module.href}">
-                    <i class="icon {$module.icon}"></i>
-                    <span>{$module.title}</span>
-                </a>
-            {else}
-            {* 带子菜单 *}
-                {if intval($active) === $order }
-                <li class="submenu active"> {else}  <li class="submenu">  {/if}
-                <a href="javascript:void(0);">
-                    <i class="icon {$module.icon}"></i>
-                    <span>{$module.title}</span>
-                    {*  {$active|gettype}{$order|gettype} 检验类型，法相一个是int类型的1，一个是字符串'1' *}
-                </a>
-                <ul>
-                {foreach $module['items'] as $item}
-                    <li><a href="{$item.href}">{$item.title}</a></li>
-                {/foreach}
-                </ul>
-            {/if}
-            </li>
-        {/foreach}
-
-        <!-- 快速统计 -->
-        {foreach $process_bar as $key=>$val}
-            {foreach $val as $v}
-                <li class="content">
-                    <span>{$v.name}</span>
-                    {if $key === 0}
-                        <div class="progress progress-mini active progress-striped progress-danger">
-                    {else}
-                        <div class="progress progress-mini active progress-striped">
-                    {/if}
-                        <div style="width: {$v.percent}%;" class="bar"></div>
-                    </div>
-                    <span class="percent"> {$v.percent}%</span>
-                    <div class="stat">{$v.used} / {$v.total} {$v.unit}</div>
-                </li>
-            {/foreach}
-        {/foreach}
-
-    </ul>
-</div>
-{/block}
-
-
-<!-- 内容区域 -->
-{block name="content"}{/block}
-
-<!-- 页脚区域 -->
-{block name="footer"}
-<div class="row-fluid">
-    <div id="footer" class="span12">{$footinfo.copyright}</div>
-</div>
-{/block}
+{block name="body"}{/block}
 
 </body>
 </html>
