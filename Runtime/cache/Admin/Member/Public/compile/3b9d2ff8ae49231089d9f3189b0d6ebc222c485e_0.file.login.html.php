@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2015-10-18 11:14:41
+<?php /* Smarty version 3.1.24, created on 2015-10-18 18:14:00
          compiled from "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html" */ ?>
 <?php
-/*%%SmartyHeaderCode:1970656230ea1a023c3_25848075%%*/
+/*%%SmartyHeaderCode:4859562370e826b7e0_85945884%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3b9d2ff8ae49231089d9f3189b0d6ebc222c485e' => 
     array (
       0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html',
-      1 => 1445136882,
+      1 => 1445157007,
       2 => 'file',
     ),
     '9b2d62f252ce862644469bdc805dc5962aeeda3c' => 
@@ -18,14 +18,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       1 => 1445138075,
       2 => 'file',
     ),
-    '69cf96af853658016a141a53d2e5d7af2f621262' => 
+    '5e8e875b0e02bd50b37f8c758b5ee8be3daf7b0e' => 
     array (
-      0 => '69cf96af853658016a141a53d2e5d7af2f621262',
+      0 => '5e8e875b0e02bd50b37f8c758b5ee8be3daf7b0e',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '1970656230ea1a023c3_25848075',
+  'nocache_hash' => '4859562370e826b7e0_85945884',
   'variables' => 
   array (
     'page_title' => 0,
@@ -33,13 +33,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_56230ea1aec327_56298468',
+  'unifunc' => 'content_562370ea4c61c5_72881589',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56230ea1aec327_56298468')) {
-function content_56230ea1aec327_56298468 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_562370ea4c61c5_72881589')) {
+function content_562370ea4c61c5_72881589 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '1970656230ea1a023c3_25848075';
+$_smarty_tpl->properties['nocache_hash'] = '4859562370e826b7e0_85945884';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -189,7 +189,7 @@ $_smarty_tpl->properties['nocache_hash'] = '1970656230ea1a023c3_25848075';
 <body>
 
 <?php
-$_smarty_tpl->properties['nocache_hash'] = '1970656230ea1a023c3_25848075';
+$_smarty_tpl->properties['nocache_hash'] = '4859562370e826b7e0_85945884';
 ?>
 
 <div class="ch-container">
@@ -213,7 +213,13 @@ $_smarty_tpl->properties['nocache_hash'] = '1970656230ea1a023c3_25848075';
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user red"></i></span>
                             <input type="text" class="form-control" placeholder="Username">
                         </div>
-                        <div class="clearfix"></div><br>
+                        <div class="clearfix"></div><br />
+
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock red"></i></span>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="clearfix"></div>
 
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock red"></i></span>
