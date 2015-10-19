@@ -1,17 +1,36 @@
 var Login = function() {
 
+    var login_form = $('.login-form');
+    var forget_form = $('.forget-form');
+    var register_form = $("#register-form");
+    var verifyimg = $("#verify_img");
+
+    //click to refresh verify image
+    verifyimg.click(function(){
+        var src = verifyimg.attr("src");
+        if( src.indexOf('?')>0){
+            $(this).attr("src", src+'&random='+Math.random());
+        }else{
+            $(this).attr("src", src.replace(/\?.*$/,'')+'?'+Math.random());
+        }
+    });
+
+
     var handleLogin = function() {
 
-        $('.login-form').validate({
+        login_form.validate({
             errorElement: 'span', //default input error message container
             errorClass: 'help-block', // default input error message class
-            focusInvalid: false, // do not focus the last invalid input
+            focusInvalid: true, // do not focus the last invalid input
             rules: {
                 username: {
                     required: true
                 },
                 password: {
                     required: true
+                },
+                verify :{
+                  required :true
                 },
                 remember: {
                     required: false
@@ -24,16 +43,25 @@ var Login = function() {
                 },
                 password: {
                     required: "Password is required."
+                },
+                verify:{
+                    required: "Verify Code is required.",
+                    minlength: 4
                 }
             },
 
-            invalidHandler: function(event, validator) { //display error alert on form submit   
-                $('.alert-danger', $('.login-form')).show();
+            invalidHandler: function(event, validator) { //display error alert on form submit
+                //console.log(validator.invalid);
+                var error = '';
+                for(var x in validator.invalid){
+                    //获取错误信息
+                    error += validator.invalid[x]+"<br />";
+                }
+                showErrorMessage(error);
             },
 
             highlight: function(element) { // hightlight error inputs
-                $(element)
-                    .closest('.form-group').addClass('has-error'); // set error class to the control group
+                $(element).closest('.form-group').addClass('has-error'); // set error class to the control group
             },
 
             success: function(label) {
@@ -50,15 +78,15 @@ var Login = function() {
             }
         });
 
-        $('.login-form input').keypress(function(e) {
+        login_form.find("input").keypress(function(e) {
             if (e.which == 13) {
-                if ($('.login-form').validate().form()) {
-                    $('.login-form').submit(); //form validation success, call ajax form submit
+                if (login_form.validate().form()) {
+                    login_form.submit(); //form validation success, call ajax form submit
                 }
                 return false;
             }
         });
-    }
+    };
 
     var handleForgetPassword = function() {
         $('.forget-form').validate({
@@ -79,7 +107,7 @@ var Login = function() {
                 }
             },
 
-            invalidHandler: function(event, validator) { //display error alert on form submit   
+            invalidHandler: function(event, validator) { //display error alert on form submit
 
             },
 
@@ -102,36 +130,34 @@ var Login = function() {
             }
         });
 
-        $('.forget-form input').keypress(function(e) {
+        forget_form.find("input").keypress(function(e) {
             if (e.which == 13) {
-                if ($('.forget-form').validate().form()) {
-                    $('.forget-form').submit();
+                if (forget_form.validate().form()) {
+                    forget_form.submit();
                 }
                 return false;
             }
         });
 
         jQuery('#forget-password').click(function() {
-            jQuery('.login-form').hide();
-            jQuery('.forget-form').show();
+            login_form.hide();
+            forget_form.show();
         });
 
         jQuery('#back-btn').click(function() {
-            jQuery('.login-form').show();
-            jQuery('.forget-form').hide();
+            login_form.show();
+            forget_form.hide();
         });
-
-    }
+    };
 
     var handleRegister = function() {
-
         function format(state) {
             if (!state.id) return state.text; // optgroup
             return "<img class='flag' src='../../assets/global/img/flags/" + state.id.toLowerCase() + ".png'/>&nbsp;&nbsp;" + state.text;
         }
-
+        var select2_sample4 = $("#select2_sample4");
         if (jQuery().select2) {
-	        $("#select2_sample4").select2({
+            select2_sample4.select2({
 	            placeholder: '<i class="fa fa-map-marker"></i>&nbsp;Select a Country',
 	            allowClear: true,
 	            formatResult: format,
@@ -141,38 +167,24 @@ var Login = function() {
 	            }
 	        });
 
-
-	        $('#select2_sample4').change(function() {
-	            $('.register-form').validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
+            select2_sample4.change(function() {
+	            register_form.validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
 	        });
     	}
 
-        $('.register-form').validate({
+        register_form.validate({
             errorElement: 'span', //default input error message container
             errorClass: 'help-block', // default input error message class
             focusInvalid: false, // do not focus the last invalid input
             ignore: "",
             rules: {
 
-                fullname: {
-                    required: true
-                },
-                email: {
-                    required: true,
-                    email: true
-                },
-                address: {
-                    required: true
-                },
-                city: {
-                    required: true
-                },
-                country: {
-                    required: true
-                },
-
                 username: {
                     required: true
+                },
+                nickname: {
+                    required: true,
+                    email: true
                 },
                 password: {
                     required: true
@@ -180,19 +192,15 @@ var Login = function() {
                 rpassword: {
                     equalTo: "#register_password"
                 },
-
-                tnc: {
+                email: {
                     required: true
                 }
             },
 
             messages: { // custom messages for radio buttons and checkboxes
-                tnc: {
-                    required: "Please accept TNC first."
-                }
             },
 
-            invalidHandler: function(event, validator) { //display error alert on form submit   
+            invalidHandler: function(event, validator) { //display error alert on form submit
 
             },
 
@@ -207,7 +215,7 @@ var Login = function() {
             },
 
             errorPlacement: function(error, element) {
-                if (element.attr("name") == "tnc") { // insert checkbox errors after the container                  
+                if (element.attr("name") == "tnc") { // insert checkbox errors after the container
                     error.insertAfter($('#register_tnc_error'));
                 } else if (element.closest('.input-icon').size() === 1) {
                     error.insertAfter(element.closest('.input-icon'));
@@ -223,23 +231,23 @@ var Login = function() {
 
         $('.register-form input').keypress(function(e) {
             if (e.which == 13) {
-                if ($('.register-form').validate().form()) {
-                    $('.register-form').submit();
+                if (register_form.validate().form()) {
+                    register_form.submit();
                 }
                 return false;
             }
         });
 
         jQuery('#register-btn').click(function() {
-            jQuery('.login-form').hide();
-            jQuery('.register-form').show();
+            login_form.hide();
+            register_form.show();
         });
 
         jQuery('#register-back-btn').click(function() {
-            jQuery('.login-form').show();
-            jQuery('.register-form').hide();
+            login_form.show();
+            register_form.hide();
         });
-    }
+    };
 
     return {
         //main function to initiate the module

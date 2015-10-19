@@ -1,34 +1,41 @@
-<?php /* Smarty version 3.1.24, created on 2015-10-19 22:08:18
-         compiled from "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html" */ ?>
+<?php /* Smarty version 3.1.24, created on 2015-10-19 20:00:09
+         compiled from "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login2.html" */ ?>
 <?php
-/*%%SmartyHeaderCode:225845624f952af17a9_37570389%%*/
+/*%%SmartyHeaderCode:273105624db49062c70_56726377%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '3b9d2ff8ae49231089d9f3189b0d6ebc222c485e' => 
+    '0ff1fc909e01d34218e616a63edb38788756d361' => 
     array (
-      0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html',
-      1 => 1445263697,
+      0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login2.html',
+      1 => 1445255993,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '225845624f952af17a9_37570389',
-  'variables' => 
-  array (
-    'login_message' => 0,
-  ),
+  'nocache_hash' => '273105624db49062c70_56726377',
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5624f952bb3032_76581363',
+  'unifunc' => 'content_5624db4910f504_23356806',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5624f952bb3032_76581363')) {
-function content_5624f952bb3032_76581363 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5624db4910f504_23356806')) {
+function content_5624db4910f504_23356806 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
+$_smarty_tpl->properties['nocache_hash'] = '273105624db49062c70_56726377';
 ?>
 <!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.2
+Version: 3.3.0
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
@@ -90,63 +97,54 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
 <!-- BEGIN LOGIN -->
 <div class="content">
     <!-- BEGIN LOGIN FORM -->
-    <form class="login-form" id="login_form" action="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/public/login'),$_smarty_tpl);?>
-" method="post">
+    <form class="login-form" action="index.html" method="post">
         <h3 class="form-title">Sign In</h3>
         <div class="alert alert-danger display-hide">
             <button class="close" data-close="alert"></button>
-			<span> Enter any username and password. </span>
+			<span>
+			Enter any username and password. </span>
         </div>
         <div class="form-group">
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
             <label class="control-label visible-ie8 visible-ie9">Username</label>
-            <input id="username" class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username"/>
+            <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username"/>
         </div>
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">Password</label>
-            <input id="password" class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password"/>
-        </div>
-        <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Verify</label>
-            <input id="verify" class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Verify" name="verify"/>
-            <img  class="form-control form-control-solid placeholder-no-fix" src="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/public/verify','mode'=>'1'),$_smarty_tpl);?>
-" id="verify_img" />
+            <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="password"/>
         </div>
         <div class="form-actions">
             <button type="submit" class="btn btn-success uppercase">Login</button>
             <label class="rememberme check">
                 <input type="checkbox" name="remember" value="1"/>Remember </label>
-            <a href="javascript:void(0);" id="forget-password" class="forget-password">Forgot Password?</a>
+            <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
         </div>
-        <!--<div class="login-options">-->
-            <!--<h4>Or login with</h4>-->
-            <!--<ul class="social-icons">-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color facebook" data-original-title="facebook" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color twitter" data-original-title="Twitter" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color googleplus" data-original-title="Goole Plus" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color linkedin" data-original-title="Linkedin" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
+        <div class="login-options">
+            <h4>Or login with</h4>
+            <ul class="social-icons">
+                <li>
+                    <a class="social-icon-color facebook" data-original-title="facebook" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a class="social-icon-color twitter" data-original-title="Twitter" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a class="social-icon-color googleplus" data-original-title="Goole Plus" href="javascript:;"></a>
+                </li>
+                <li>
+                    <a class="social-icon-color linkedin" data-original-title="Linkedin" href="javascript:;"></a>
+                </li>
+            </ul>
+        </div>
         <div class="create-account">
             <p>
-                <a href="javascript:void(0);" id="register-btn" class="uppercase">Create an account</a>
+                <a href="javascript:;" id="register-btn" class="uppercase">Create an account</a>
             </p>
         </div>
     </form>
     <!-- END LOGIN FORM -->
-
-
     <!-- BEGIN FORGOT PASSWORD FORM -->
-    <form class="forget-form" action="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/public/forget'),$_smarty_tpl);?>
-" method="post">
+    <form class="forget-form" action="index.html" method="post">
         <h3>Forget Password ?</h3>
         <p>
             Enter your e-mail address below to reset your password.
@@ -160,63 +158,61 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
         </div>
     </form>
     <!-- END FORGOT PASSWORD FORM -->
-
-
-
-
     <!-- BEGIN REGISTRATION FORM -->
-    <form class="register-form" id="register-form" action="index.html" method="post">
+    <form class="register-form" action="index.html" method="post">
         <h3>Sign Up</h3>
         <p class="hint">
             Enter your personal details below:
         </p>
         <div class="form-group">
+            <label class="control-label visible-ie8 visible-ie9">Full Name</label>
+            <input class="form-control placeholder-no-fix" type="text" placeholder="Full Name" name="fullname"/>
+        </div>
+        <div class="form-group">
             <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
-            <label class="control-label visible-ie8 visible-ie9">Username</label>
-            <input class="form-control placeholder-no-fix" type="text" placeholder="Username" name="username"/>
+            <label class="control-label visible-ie8 visible-ie9">Email</label>
+            <input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email"/>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Nickname</label>
-            <input class="form-control placeholder-no-fix" type="text" placeholder="Nickname" name="nickname"/>
+            <label class="control-label visible-ie8 visible-ie9">Address</label>
+            <input class="form-control placeholder-no-fix" type="text" placeholder="Address" name="address"/>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Password</label>
-            <input class="form-control placeholder-no-fix" type="text" placeholder="Password " id="register_password"  name="password"/>
+            <label class="control-label visible-ie8 visible-ie9">City/Town</label>
+            <input class="form-control placeholder-no-fix" type="text" placeholder="City/Town" name="city"/>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Password again</label>
-            <input class="form-control placeholder-no-fix" type="text" placeholder="Password again" name="rpassword"/>
+            <label class="control-label visible-ie8 visible-ie9">Country</label>
+            <select name="country" class="form-control">
+                <option value="">Country</option>
+                <option value="AF">Afghanistan</option>
+
+
+            </select>
         </div>
         <p class="hint">
             Enter your account details below:
         </p>
         <div class="form-group">
-            <label for="sex"  class="control-label visible-ie8 visible-ie9">Sex</label>
-            <select name="country" id="sex" class="form-control">
-                <option value="1">Man</option>
-                <option value="0">Women</option>
-            </select>
+            <label class="control-label visible-ie8 visible-ie9">Username</label>
+            <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Username" name="username"/>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Email</label>
-            <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"/>
+            <label class="control-label visible-ie8 visible-ie9">Password</label>
+            <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password"/>
         </div>
         <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">Mobile</label>
-            <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Mobile" name="mobile"/>
-        </div>
-        <div class="form-group">
-            <label class="control-label visible-ie8 visible-ie9">QQ</label>
-            <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="QQ" name="qq"/>
+            <label class="control-label visible-ie8 visible-ie9">Re-type Your Password</label>
+            <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="rpassword"/>
         </div>
         <div class="form-group margin-top-20 margin-bottom-20">
             <label class="check">
-                <input type="checkbox" name="tnc"/> I agree to the
-                <a href="javascript:void(0);">Terms of Service </a>
-                &
-                <a href="javascript:void(0);">Privacy Policy </a>
+                <input type="checkbox" name="tnc"/> I agree to the <a href="javascript:;">
+                Terms of Service </a>
+                & <a href="javascript:;">
+                Privacy Policy </a>
             </label>
-            <div id="register_tnc_error">sasasasa
+            <div id="register_tnc_error">
             </div>
         </div>
         <div class="form-actions">
@@ -225,8 +221,6 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
         </div>
     </form>
     <!-- END REGISTRATION FORM -->
-
-
 </div>
 <div class="copyright">
     2014 © Metronic. Admin Dashboard Template.
@@ -296,17 +290,6 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
 <?php echo '<script'; ?>
 >
     jQuery(document).ready(function() {
-        var dangershower =  $('.alert-danger', $("#login_form"));//the parameter two is context
-        function showErrorMessage(msg){
-            dangershower.html(msg);
-            dangershower.show();
-        }
-        var login_message = "<?php echo $_smarty_tpl->tpl_vars['login_message']->value;?>
-";
-        if($.trim(login_message)){
-            showErrorMessage(login_message);
-        }
-
         Metronic.init(); // init metronic core components
         Layout.init(); // init current layout
         Login.init();

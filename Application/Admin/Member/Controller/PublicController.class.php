@@ -30,6 +30,12 @@ class PublicController extends Controller {
 
     private $login_message = '';
 
+    /**
+     * 登陆与现实
+     * @param null $username
+     * @param null $password
+     * @param null $verify
+     */
     public function login($username=null,$password=null,$verify=null){
         if(IS_POST){
             $this->login_message = empty($username)?'':self::$message_box['empty_username'];
@@ -48,13 +54,27 @@ class PublicController extends Controller {
             $this->redirect(self::$login_success_jump);
         }
         $this->assign('login_message',$this->login_message);
-        $this->display();
+        $this->display('login');
     }
 
+    /**
+     * 登出
+     */
     public function logout(){
         echo 'Here is "'.__METHOD__.'" ,you gonna to log out the system,that is right!';
     }
 
+    /**
+     * 忘记密码
+     * @param $email
+     */
+    public function forget($email){
+        SEK::dumpout($email);
+    }
+
+    public function register(){
+        SEK::dumpout($_POST);
+    }
 
     /**
      * 生成验证码

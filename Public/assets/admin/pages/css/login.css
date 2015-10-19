@@ -58,6 +58,15 @@ Login page
   color: #8290a3;
   border: 1px solid #dde3ec;
 }
+.login .content #verify{
+  width: 50%;
+  float: left;
+}
+.login .content #verify_img{
+  width: 50%;
+  height: 43px;
+  float: left;
+}
 .login .content .form-control:focus, .login .content .form-control:active {
   border: 1px solid #c3ccda;
 }

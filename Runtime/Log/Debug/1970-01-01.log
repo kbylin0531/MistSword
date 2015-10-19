@@ -5613,3 +5613,2041 @@ File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
 
 
 
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html"  on line 1 "{extends file="{../../../Common/View/base.html"}"  - Unexpected ".", expected one of: INTEGER
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:1
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(46, '.')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(46, '.')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{extends file="...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('login.html', NULL, NULL, NULL, true)
+#10 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('login.html', NULL, NULL, NULL)
+#11 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#12 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\PublicController.class.php(51): System\Core\Controller->display()
+#13 [internal function]: Application\Admin\Member\Controller\PublicController->login(NULL, NULL, NULL)
+#14 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(129): ReflectionMethod->invokeArgs(Object(Application\Admin\Member\Controller\PublicController), Array)
+#15 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'login', Array)
+#16 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#17 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html"  on line 1 "{extends file="{../../Common/View/base.html"}"  - Unexpected ".", expected one of: INTEGER
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:1
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(46, '.')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(46, '.')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{extends file="...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('login.html', NULL, NULL, NULL, true)
+#10 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('login.html', NULL, NULL, NULL)
+#11 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#12 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\PublicController.class.php(51): System\Core\Controller->display()
+#13 [internal function]: Application\Admin\Member\Controller\PublicController->login(NULL, NULL, NULL)
+#14 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(129): ReflectionMethod->invokeArgs(Object(Application\Admin\Member\Controller\PublicController), Array)
+#15 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'login', Array)
+#16 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#17 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html"  on line 1 "{extends file="{../../../Common/View/base.html"}"  - Unexpected ".", expected one of: INTEGER
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:1
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(46, '.')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(46, '.')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{extends file="...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('login.html', NULL, NULL, NULL, true)
+#10 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('login.html', NULL, NULL, NULL)
+#11 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#12 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\PublicController.class.php(51): System\Core\Controller->display()
+#13 [internal function]: Application\Admin\Member\Controller\PublicController->login(NULL, NULL, NULL)
+#14 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(129): ReflectionMethod->invokeArgs(Object(Application\Admin\Member\Controller\PublicController), Array)
+#15 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'login', Array)
+#16 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#17 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html"  on line 1 "{extends file="{../../../Common/View/base.html"}"  - Unexpected ".", expected one of: INTEGER
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:1
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(46, '.')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(46, '.')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{extends file="...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('login.html', NULL, NULL, NULL, true)
+#10 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('login.html', NULL, NULL, NULL)
+#11 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#12 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\PublicController.class.php(51): System\Core\Controller->display()
+#13 [internal function]: Application\Admin\Member\Controller\PublicController->login(NULL, NULL, NULL)
+#14 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(129): ReflectionMethod->invokeArgs(Object(Application\Admin\Member\Controller\PublicController), Array)
+#15 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'login', Array)
+#16 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#17 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html"  on line 1 "{extends file="{../../../Common/View/base.html"}"  - Unexpected ".", expected one of: INTEGER
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:1
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(46, '.')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(46, '.')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{extends file="...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('login.html', NULL, NULL, NULL, true)
+#10 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('login.html', NULL, NULL, NULL)
+#11 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#12 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\PublicController.class.php(51): System\Core\Controller->display()
+#13 [internal function]: Application\Admin\Member\Controller\PublicController->login(NULL, NULL, NULL)
+#14 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(129): ReflectionMethod->invokeArgs(Object(Application\Admin\Member\Controller\PublicController), Array)
+#15 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'login', Array)
+#16 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#17 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html"  on line 1 "{extends file="{../../../Common/View/base.html"}"  - Unexpected ".", expected one of: INTEGER
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:1
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(46, '.')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(46, '.')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{extends file="...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('login.html', NULL, NULL, NULL, true)
+#10 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('login.html', NULL, NULL, NULL)
+#11 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#12 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\PublicController.class.php(51): System\Core\Controller->display()
+#13 [internal function]: Application\Admin\Member\Controller\PublicController->login(NULL, NULL, NULL)
+#14 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(129): ReflectionMethod->invokeArgs(Object(Application\Admin\Member\Controller\PublicController), Array)
+#15 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'login', Array)
+#16 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#17 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+SmartyCompilerException : Syntax error in template "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html"  on line 1 "{extends file="{../../../Common/View/base.html"}"  - Unexpected ".", expected one of: INTEGER
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php   Line:1
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2346): Smarty_Internal_TemplateCompilerBase->trigger_template_error()
+#1 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templateparser.php(2405): Smarty_Internal_Templateparser->yy_syntax_error(46, '.')
+#2 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_smartytemplatecompiler.php(114): Smarty_Internal_Templateparser->doParse(46, '.')
+#3 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(396): Smarty_Internal_SmartyTemplateCompiler->doCompile('{extends file="...', true)
+#4 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(226): Smarty_Internal_TemplateCompilerBase->compileTemplate(Object(Smarty_Internal_Template))
+#5 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(176): Smarty_Template_Compiled->compileTemplateSource(Object(Smarty_Internal_Template))
+#6 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_template_compiled.php(199): Smarty_Template_Compiled->process(Object(Smarty_Internal_Template))
+#7 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\sysplugins\smarty_internal_template.php(246): Smarty_Template_Compiled->render(Object(Smarty_Internal_Template))
+#8 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(824): Smarty_Internal_Template->render(true, false, true)
+#9 F:\Web\Webroot\MistCMS\System\Projects\Smarty\libs\Smarty.class.php(838): Smarty->fetch('login.html', NULL, NULL, NULL, true)
+#10 F:\Web\Webroot\MistCMS\System\Core\View.class.php(190): Smarty->display('login.html', NULL, NULL, NULL)
+#11 F:\Web\Webroot\MistCMS\System\Core\Controller.class.php(223): System\Core\View->display(NULL, NULL, NULL, NULL)
+#12 F:\Web\Webroot\MistCMS\Application\Admin\Member\Controller\PublicController.class.php(51): System\Core\Controller->display()
+#13 [internal function]: Application\Admin\Member\Controller\PublicController->login(NULL, NULL, NULL)
+#14 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(129): ReflectionMethod->invokeArgs(Object(Application\Admin\Member\Controller\PublicController), Array)
+#15 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'login', Array)
+#16 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#17 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::index() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'index')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'index', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::index() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'index')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'index', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::index() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'index')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'index', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::index() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'index')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'index', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::index() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'index')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'index', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
+08:00:00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+            ||--message--||
+ReflectionException : Method Application\Admin\Member\Controller\PublicController::favicon.ico() does not exist
+||--position--||
+File:F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php   Line:83
+||--trace--||
+#0 F:\Web\Webroot\MistCMS\System\Core\Dispatcher.class.php(83): ReflectionMethod->__construct(Object(Application\Admin\Member\Controller\PublicController), 'favicon.ico')
+#1 F:\Web\Webroot\MistCMS\System\Mist.class.php(213): System\Core\Dispatcher::execute(Array, 'Public', 'favicon.ico', Array)
+#2 F:\Web\Webroot\MistCMS\index.php(59): System\Mist::start()
+#3 {main}
+
+            
+=====================================================================================
+
+
+
+
+
