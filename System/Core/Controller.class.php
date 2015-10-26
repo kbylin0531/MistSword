@@ -70,6 +70,7 @@ class Controller{
         }
         null === $context or $this->context = array_merge($this->context,$context);
         $this->module_path = BASE_PATH.'Application/'.$this->context['m'].'/';
+
     }
 
 
@@ -95,6 +96,30 @@ class Controller{
             default:
                 throw new \Exception('Unknown rReturn content type');
         }
+    }
+
+    /**
+     * ajax返回成功的信息
+     * @param $message
+     * @throws \Exception
+     */
+    protected function ajaxSuccess($message){
+        $this->ajax(array(
+            'type'      => 'success',
+            'message'   => $message
+        ));
+    }
+
+    /**
+     * ajax返回失败的信息
+     * @param $message
+     * @throws \Exception
+     */
+    protected function ajaxFaiure($message){
+        $this->ajax(array(
+            'type'      => 'failure',
+            'message'   => $message
+        ));
     }
 
     /**

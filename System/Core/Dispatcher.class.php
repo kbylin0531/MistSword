@@ -75,6 +75,20 @@ class Dispatcher{
 //            throw new ClassNotFoundException($className);
 //        }
 
+
+        //ajax参数分解
+        if(isset($_POST['_PARAMS_'])){
+            parse_str($_POST['_PARAMS_'],$temp);
+            unset($_POST['_PARAMS_']);
+            array_merge($_POST,$temp);
+        }
+        if(isset($_GET['_PARAMS_'])){
+            parse_str($_GET['_PARAMS_'],$temp);
+            unset($_GET['_PARAMS_']);
+            array_merge($_GET,$temp);
+        }
+
+
         Mist::status('execute_instance_build_begin');
         //Controller 子类实例
         $classInstance =  new $className();

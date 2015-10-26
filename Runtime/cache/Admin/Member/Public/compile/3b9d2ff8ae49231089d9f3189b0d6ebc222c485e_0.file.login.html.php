@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.24, created on 2015-10-19 22:08:18
+<?php /* Smarty version 3.1.24, created on 2015-10-26 20:32:47
          compiled from "F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html" */ ?>
 <?php
-/*%%SmartyHeaderCode:225845624f952af17a9_37570389%%*/
+/*%%SmartyHeaderCode:29023562e1d6f0b8f23_52451849%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,24 +9,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3b9d2ff8ae49231089d9f3189b0d6ebc222c485e' => 
     array (
       0 => 'F:/Web/Webroot/MistCMS/Application/Admin/Member/View/Public/login.html',
-      1 => 1445263697,
+      1 => 1445862720,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '225845624f952af17a9_37570389',
+  'nocache_hash' => '29023562e1d6f0b8f23_52451849',
   'variables' => 
   array (
     'login_message' => 0,
   ),
   'has_nocache_code' => false,
   'version' => '3.1.24',
-  'unifunc' => 'content_5624f952bb3032_76581363',
+  'unifunc' => 'content_562e1d6f3324f5_30333410',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5624f952bb3032_76581363')) {
-function content_5624f952bb3032_76581363 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_562e1d6f3324f5_30333410')) {
+function content_562e1d6f3324f5_30333410 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
+$_smarty_tpl->properties['nocache_hash'] = '29023562e1d6f0b8f23_52451849';
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
@@ -109,32 +109,15 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">Verify</label>
             <input id="verify" class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Verify" name="verify"/>
-            <img  class="form-control form-control-solid placeholder-no-fix" src="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/public/verify','mode'=>'1'),$_smarty_tpl);?>
+            <img style="padding: 0px;;" class="form-control form-control-solid placeholder-no-fix" src="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/public/verify','mode'=>'1'),$_smarty_tpl);?>
 " id="verify_img" />
         </div>
-        <div class="form-actions">
+        <div class="form-actions" style="padding-top: 10px;">
             <button type="submit" class="btn btn-success uppercase">Login</button>
             <label class="rememberme check">
                 <input type="checkbox" name="remember" value="1"/>Remember </label>
             <a href="javascript:void(0);" id="forget-password" class="forget-password">Forgot Password?</a>
         </div>
-        <!--<div class="login-options">-->
-            <!--<h4>Or login with</h4>-->
-            <!--<ul class="social-icons">-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color facebook" data-original-title="facebook" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color twitter" data-original-title="Twitter" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color googleplus" data-original-title="Goole Plus" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-                <!--<li>-->
-                    <!--<a class="social-icon-color linkedin" data-original-title="Linkedin" href="javascript:void(0);"></a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
         <div class="create-account">
             <p>
                 <a href="javascript:void(0);" id="register-btn" class="uppercase">Create an account</a>
@@ -165,7 +148,8 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
 
 
     <!-- BEGIN REGISTRATION FORM -->
-    <form class="register-form" id="register-form" action="index.html" method="post">
+    <form class="register-form" id="register-form" action="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['U'][0][0]->U(array('url'=>'admin/member/public/register'),$_smarty_tpl);?>
+" method="post">
         <h3>Sign Up</h3>
         <p class="hint">
             Enter your personal details below:
@@ -181,18 +165,18 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
         </div>
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">Password</label>
-            <input class="form-control placeholder-no-fix" type="text" placeholder="Password " id="register_password"  name="password"/>
+            <input class="form-control placeholder-no-fix" type="password" placeholder="Password " id="reg_password"  name="password"/>
         </div>
         <div class="form-group">
             <label class="control-label visible-ie8 visible-ie9">Password again</label>
-            <input class="form-control placeholder-no-fix" type="text" placeholder="Password again" name="rpassword"/>
+            <input class="form-control placeholder-no-fix" type="password" placeholder="Password again" name="rpassword"/>
         </div>
         <p class="hint">
             Enter your account details below:
         </p>
         <div class="form-group">
             <label for="sex"  class="control-label visible-ie8 visible-ie9">Sex</label>
-            <select name="country" id="sex" class="form-control">
+            <select name="sex" id="sex" class="form-control">
                 <option value="1">Man</option>
                 <option value="0">Women</option>
             </select>
@@ -216,12 +200,12 @@ $_smarty_tpl->properties['nocache_hash'] = '225845624f952af17a9_37570389';
                 &
                 <a href="javascript:void(0);">Privacy Policy </a>
             </label>
-            <div id="register_tnc_error">sasasasa
+            <div id="register_tnc_error">
             </div>
         </div>
         <div class="form-actions">
             <button type="button" id="register-back-btn" class="btn btn-default">Back</button>
-            <button type="submit" id="register-submit-btn" class="btn btn-success uppercase pull-right">Submit</button>
+            <button type="button" id="register-submit-btn" class="btn btn-success uppercase pull-right">Submit</button>
         </div>
     </form>
     <!-- END REGISTRATION FORM -->

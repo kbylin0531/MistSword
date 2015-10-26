@@ -6,6 +6,7 @@
  * Time: 19:46
  */
 namespace Application\Admin\Member\Controller;
+use Application\Admin\Member\Model\MemberModel;
 use Application\Admin\Member\Util\MemberKits;
 use System\Core\Controller;
 use System\Extension\Verify;
@@ -30,13 +31,17 @@ class PublicController extends Controller {
 
     private $login_message = '';
 
+    public function __construct(){
+        parent::__construct();
+    }
+
     /**
      * 登陆与现实
-     * @param null $username
-     * @param null $password
-     * @param null $verify
+     * @param string $username
+     * @param string $password
+     * @param string $verify
      */
-    public function login($username=null,$password=null,$verify=null){
+    public function login($username='',$password='',$verify=''){
         if(IS_POST){
             $this->login_message = empty($username)?'':self::$message_box['empty_username'];
             $this->login_message = empty($password)?'':self::$message_box['empty_password'];
@@ -72,8 +77,34 @@ class PublicController extends Controller {
         SEK::dumpout($email);
     }
 
-    public function register(){
-        SEK::dumpout($_POST);
+    /**
+     * 登陆界面注册用户
+     * @param $username
+     * @param $password
+     * @param $email
+     * @param $mobile
+     *
+     * @param int $sex
+     * @param string $qq
+     * @param string $nickname
+     */
+    public function register($username,$password,$email='',$mobile='',$sex=1,$qq='',$nickname=''){
+        $fields = array(
+            'username'  => $username,
+            'nickname'  => $nickname,
+            'password'  => $password,
+            'sex'       => $sex,
+            'email'     => $email,
+            'mobile'    => $mobile,
+            'qq'        => $qq,
+        );
+        $memberModel = new MemberModel();
+        $rst = $memberModel->register($fields);
+        if(false === $rst){
+            $this->ajaxFaiure('注册失败'.$memberModel->getErrorInfo());
+        }else{
+            $this->ajaxSuccess('注册成功');
+        }
     }
 
     /**

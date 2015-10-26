@@ -80,7 +80,6 @@
                     </div>
                     <div class="widget-content nopadding">
                         <form action="{U url='admin/member/register/createMember'}" id="member_form" method="post" class="form-horizontal">
-
                             <div class="control-group">
                                 <label class="control-label">手机</label>
                                 <div class="controls">
@@ -101,9 +100,9 @@
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">性别</label>
+                                <label class="control-label" for="sex">性别</label>
                                 <div class="controls">
-                                    <select name="sex">
+                                    <select name="sex" id="sex">
                                         <option value="0">男</option>
                                         <option value="1">女</option>
                                     </select>
@@ -111,9 +110,9 @@
                             </div>
 
                             <div class="control-group">
-                                <label class="control-label">启用状态</label>
+                                <label class="control-label" for="status">启用状态</label>
                                 <div class="controls">
-                                    <select name="sex">
+                                    <select name="sex" id="status">
                                         <option value="1">启用</option>
                                         <option value="0">禁用</option>
                                     </select>

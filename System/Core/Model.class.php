@@ -72,7 +72,7 @@ class Model{
 
     /**
      * 构造函数
-     * @param string|array $config 对应的数据表的名称(string)或者模型配置选项(array)
+     * @param array $config 模型配置选项(array)
      * @throws \Exception
      */
     public function __construct($config=null){
@@ -84,17 +84,16 @@ class Model{
             throw new \Exception('Class "'.get_called_class().'" auto fetch falied!');
         }
         if(isset($config)){
-            if(is_string($config)){
-                $this->setTableName($config);
-            }else{
-                //动态设置属性
-                foreach($config as $name => $item){
-                    $this->$name = $item;
-                }
+            //动态设置属性
+            foreach($config as $name => $item){
+                $this->$name = $item;
             }
         }else{
-            $modelname = SEK::translateStringStyle($matches[2],false);
-            $this->setTableName($modelname);
+            //默认设置的情况下
+            if(!isset($this->real_tablename)){
+                $modelname = SEK::translateStringStyle($matches[2],false);
+                $this->setTableName($modelname);
+            }
         }
     }
 
@@ -140,6 +139,7 @@ class Model{
      * @throws \System\Exception\PDOExecuteException
      */
     public function query($sql,array $inputs=null){
+        isset($this->dao) or $this->init();
         $rst = $this->dao->prepare($sql)->execute($inputs);
         if(false === $rst){
             return false;
@@ -155,6 +155,7 @@ class Model{
      * @throws \System\Exception\PDOExecuteException
      */
     public function execute($sql,array $inputs=null){
+        isset($this->dao) or $this->init();
         $rst = $this->dao->prepare($sql)->execute($inputs);
         if(false === $rst){
             return false;
@@ -170,31 +171,34 @@ class Model{
      * @throws \Exception
      */
     public function create(array $fields,$tablename=null){
+        isset($this->dao) or $this->init();
         isset($tablename) or $tablename = $this->getTableName();
         return $this->dao->create($tablename,$fields);
     }
 
     /**
      * 更新记录
-     * @param mixed $where
      * @param mixed $fields
+     * @param mixed $where
      * @param string $tablename
      * @return int|string 受影响行数或者错误信息
      * @throws \Exception
      */
-    public function update($where=null,$fields=null,$tablename=null){
+    public function update($fields=null,$where=null,$tablename=null){
+        isset($this->dao) or $this->init();
         isset($tablename) or $tablename = $this->getTableName();
         return $this->dao->update($tablename,$fields,$where);
     }
 
     /**
      * 获取记录
-     * @param mixed $where
      * @param mixed $fields
+     * @param mixed $where
      * @param string $tablename
      * @return array|bool
      */
-    public function select($where=null,$fields=null,$tablename=null){
+    public function select($fields=null,$where=null,$tablename=null){
+        isset($this->dao) or $this->init();
         isset($tablename) or $tablename = $this->getTableName();
         return $this->dao->select($tablename,$fields,$where);
     }
@@ -202,12 +206,13 @@ class Model{
     /**
      * 获取一条记录
      * 如果记录有多条，需要使用select进行获取，否则获取结果数目不等于1时会返回string类型错误信息
-     * @param mixed $where
      * @param mixed $fields
+     * @param mixed $where
      * @param string $tablename
      * @return array|bool
      */
-    public function find($where=null,$fields=null,$tablename=null){
+    public function find($fields=null,$where=null,$tablename=null){
+        isset($this->dao) or $this->init();
         isset($tablename) or $tablename = $this->getTableName();
         $rst = $this->dao->select($tablename,$fields,$where);
         return count($rst) !== 1? false:$rst[0];
@@ -220,6 +225,7 @@ class Model{
      * @return int|string
      */
     public function delete($where=null,$tablename=null){
+        isset($this->dao) or $this->init();
         isset($tablename) or $tablename = $this->getTableName();
         return $this->dao->delete($tablename,$where);
     }

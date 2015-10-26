@@ -129,12 +129,14 @@ final class Dao{
      */
     public static function getInstance($identifier=0,array $connect_config=null){
         self::$_hasInited or self::init();
-        if(is_array($identifier)){
-            return new Dao($identifier);
-        }elseif(!isset($connect_config) and isset(self::$daoPool[$identifier])){
+        if(isset(self::$daoPool[$identifier])){
+            return self::$daoPool[$identifier];
+        }
+
+        if(is_array($identifier)){//新建一个连接
+            $connect_config = $identifier;
+        }elseif(!isset($connect_config)){
             $connect_config = self::$config['DB_CONNECT'][$identifier];
-        }else{
-            throw new ParameterInvalidException($identifier,$connect_config);
         }
         return self::$daoPool[$identifier] = new Dao($connect_config);
     }
@@ -632,11 +634,9 @@ final class Dao{
             $flag and ($fields = rtrim($fields,','));
             $placeholder  = rtrim($placeholder,',');
             if($flag){
-                $this->prepare("insert into {$tablename} ( {$fields} ) VALUES ( {$placeholder} );")->execute($bind);
-                return $this->doneExecute();
+                return $this->prepare("INSERT INTO {$tablename} ( {$fields} ) VALUES ( {$placeholder} );")->execute($bind);
             }else{
-                $this->prepare("insert into {$tablename} VALUES ( {$placeholder} );")->execute($bind);
-                return $this->doneExecute();
+                return $this->prepare("INSERT INTO {$tablename} VALUES ( {$placeholder} );")->execute($bind);
             }
         }else{
             throw new ParameterInvalidException($fieldsMap);

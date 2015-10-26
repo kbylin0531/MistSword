@@ -22,7 +22,6 @@ class RegisterController extends AdminController{
      * 无需审核
      */
     public function registerMemberForAdmin(){
-
         $this->assign('dft_nickname','mist_'.time().'_'.mt_rand(0,1000));
         $this->assignGeneralData();
         $this->display();

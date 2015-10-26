@@ -5,6 +5,16 @@ var Login = function() {
     var register_form = $("#register-form");
     var verifyimg = $("#verify_img");
 
+    $("#register-submit-btn").click(function () {
+        var url = register_form.attr('action');
+        var values = register_form.serialize();
+        $.post(url,{_PARAMS_:values}, function (data) {
+            console.log(data);
+        });
+        
+    });
+
+
     //click to refresh verify image
     verifyimg.click(function(){
         var src = verifyimg.attr("src");
@@ -183,17 +193,17 @@ var Login = function() {
                     required: true
                 },
                 nickname: {
-                    required: true,
-                    email: true
+                    required: true
                 },
                 password: {
                     required: true
                 },
                 rpassword: {
-                    equalTo: "#register_password"
+                    required: true,
+                    equalTo: "#reg_password"
                 },
                 email: {
-                    required: true
+                    required: false
                 }
             },
 

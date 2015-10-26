@@ -10,7 +10,7 @@
       0 => 
       array (
         'type' => 'mysql',
-        'dbname' => 'ot-1.1',
+        'dbname' => 'mistcms',
         'username' => 'root',
         'password' => '123456',
         'host' => 'localhost',
