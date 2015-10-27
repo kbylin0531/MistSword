@@ -18,7 +18,7 @@ defined('BASE_PATH') or die('No Permission!');
 class Model{
 
     /**
-     * 数据库操作入口
+     * 数据操作对象
      * @var Dao
      */
     protected $dao = null;
@@ -32,13 +32,13 @@ class Model{
      *  );
      * @var array
      */
-    protected $mapping = array();
+    protected $mapping = [];
 
     /**
      * 字段信息
      * @var array
      */
-    protected $fields = array();
+    protected $fields = [];
 
     /**
      * 默认的表前缀
@@ -110,6 +110,11 @@ class Model{
             $this->real_tablename = $tablename;
         }
     }
+
+    /**
+     * 获取表名称
+     * @return string
+     */
     protected function getTableName(){
         return $this->real_tablename;
     }

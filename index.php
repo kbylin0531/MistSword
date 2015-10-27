@@ -7,6 +7,9 @@
  */
 use System\Mist;
 
+//环境要求最低5.4,推荐5.6
+version_compare(PHP_VERSION,'5.4.0','<') or die('Require PHP > 5.4 !');
+
 /**
  * 基础目录定义
  */
@@ -41,7 +44,7 @@ const DB_UNAME = 'username';
 const DB_DBNAME = 'dbname';
 const DB_HOST = 'host';
 const DB_TYPE = 'type';
-Mist::init(array(
+Mist::init([
     'URL_MODE'          => URLMODE_PATHINFO,
 //    'TIME_ZONE'         => 'Asia/Shanghai',
 //    'APP_NAME'          => 'WebManagement',
@@ -54,7 +57,7 @@ Mist::init(array(
 //    'URL_ROUTE_ON'          => true,
 //    'AUTO_CHECK_CONFIG_ON'  => false,
 //    'TEMPLATE_ENGINE'       => 'Smarty',
-));
+]);
 
 Mist::start();
 

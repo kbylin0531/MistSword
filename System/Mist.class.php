@@ -18,9 +18,13 @@ use System\Utils\Util;
 
 defined('BASE_PATH') or die('No Permission!');
 
+/**
+ * Class Mist 核心调度类
+ * @package System
+ */
 final class Mist{
 
-    private static $_config = array(
+    private static $_config = [
         'APP_NAME' => 'Mistight',//写入session时区分不同的应用
         'TIME_ZONE'=> 'Asia/Shanghai',
 
@@ -60,21 +64,21 @@ final class Mist{
         'TEMPLATE_ENGINE'       => 'Smarty',
 
         'TEMPLATE_EXT'          => 'html',
-    );
+    ];
 
     /**
      * 所有使用到的类
      * @var array
      */
-    private static $_classes = array();
+    private static $_classes = [];
 
     /**
      * 系统预加载类
      * @var array
      */
-    private static $_prev_loaded_classes = array();
+    private static $_prev_loaded_classes = [];
 
-    private static $_errors = array();
+    private static $_errors = [];
 
     private static $_url_components = null;
 
@@ -83,7 +87,7 @@ final class Mist{
      * @param array $config 配置数组
      * @return void
      */
-    public static function init(array $config = array()){
+    public static function init(array $config = []){
         //合并配置
         $config and self::$_config = array_merge(self::$_config,$config);
 
@@ -147,7 +151,7 @@ final class Mist{
         set_exception_handler('System\Mist::handleException');
 
         //-- 常用类的路径定义 --//
-        self::$_prev_loaded_classes = array(
+        self::$_prev_loaded_classes = [
             //核心类
             'System\Core\Configer'  	=> SYSTEM_PATH.'Core/Configer.class.php',
             'System\Core\Dispatcher'    => SYSTEM_PATH.'Core/Dispatcher.class.php',
@@ -165,7 +169,7 @@ final class Mist{
 
             //工具类
             'System\Utils\Util'     => SYSTEM_PATH.'Utils/Util.class.php',
-        );
+        ];
         self::$_classes = array_merge(self::$_classes,self::$_prev_loaded_classes);
 
         define('LITE_FILE_NAME',RUNTIME_PATH.APP_NAME.'.lite.php');//运行时核心文件
@@ -247,7 +251,7 @@ final class Mist{
 
         //包含的文件数组
         $files  =  get_included_files();
-        $info   =   array();
+        $info   =   [];
         foreach ($files as $key=>$file){
             $info[] = $file.' ( '.number_format(filesize($file)/1024,2).' KB )';
         }
@@ -255,9 +259,9 @@ final class Mist{
         //运行时间与内存开销
         $_infos = self::status();
         $fkey = null;
-        $cmprst = array(
+        $cmprst = [
             'Total' => "{$stat[0]}ms",//一共花费的时间
-        );
+        ];
         foreach($_infos as $key=>$val){
             if(null === $fkey){
                 $fkey = $key;
@@ -267,9 +271,9 @@ final class Mist{
                 number_format((floatval($_infos[$key][1] - $_infos[$fkey][1])/1024),2).' KB';
             $fkey = $key;
         }
-        $vars = array(
-            'trace' => array(
-                'General'       => array(
+        $vars = [
+            'trace' => [
+                'General'       => [
                     'Request'   => date('Y-m-d H:i:s',$_SERVER['REQUEST_TIME']).' '.$_SERVER['SERVER_PROTOCOL'].' '.$_SERVER['REQUEST_METHOD'],
                     'IP'        => Util::getClientIP(),
                     'Time'      => "{$stat[0]}ms",
@@ -278,8 +282,8 @@ final class Mist{
                     'Cookie'    => var_export($_COOKIE,true),
                     'Obcache-Size'  => number_format((ob_get_length()/1024),2).' KB (Lack TRACE!)',//不包括trace
                     'URLComponents' => var_export(self::$_url_components,true),
-                ),
-                'Files'         => array_merge(array('Total'=>count($info)),$info),
+                ],
+                'Files'         => array_merge(['Total'=>count($info)],$info),
                 'Status'        => $cmprst,
                 'SQL'           => Dao::log(true),
                 'Log'           => Log::getCache(),
@@ -289,17 +293,17 @@ final class Mist{
                 'SERVER'        => $_SERVER,
                 'FILES'         => $_FILES,
                 'ENV'           => $_ENV,
-                'SESSION'       => isset($_SESSION)?$_SESSION:array('SESSION state disabled'),//session_start()之后$_SESSION数组才会被创建
-                'IP'            => array(
+                'SESSION'       => isset($_SESSION)?$_SESSION:['SESSION state disabled'],//session_start()之后$_SESSION数组才会被创建
+                'IP'            => [
                     '$_SERVER["HTTP_X_FORWARDED_FOR"]'  =>  isset($_SERVER['HTTP_X_FORWARDED_FOR'])?$_SERVER['HTTP_X_FORWARDED_FOR']:'NULL',
                     '$_SERVER["HTTP_CLIENT_IP"]'  =>  isset($_SERVER['HTTP_CLIENT_IP'])?$_SERVER['HTTP_CLIENT_IP']:'NULL',
                     '$_SERVER["REMOTE_ADDR"]'  =>  $_SERVER['REMOTE_ADDR'],
                     'getenv("HTTP_X_FORWARDED_FOR")'  =>  getenv('HTTP_X_FORWARDED_FOR'),
                     'getenv("HTTP_CLIENT_IP")'  =>  getenv('HTTP_CLIENT_IP'),
                     'getenv("REMOTE_ADDR")'  =>  getenv('REMOTE_ADDR'),
-                ),
-            ),
-        );
+                ],
+            ],
+        ];
         self::loadTemplate('trace',$vars,false);//参数三表示不清空之前的缓存区
     }
 
@@ -322,13 +326,13 @@ final class Mist{
      * @throws ClassNotFoundException
      */
     public static function instance($class,$method='') {
-        static $_instances = array();
+        static $_instances = [];
         $identify   =   $class.$method;
         if(!isset($_instances[$identify])) {
             if(class_exists($class)){
                 $o = new $class();
                 if(!empty($method) && method_exists($o,$method))
-                    $_instances[$identify] = call_user_func(array(&$o, $method));
+                    $_instances[$identify] = call_user_func([&$o, $method]);
                 else
                     $_instances[$identify] = $o;
             }else{
@@ -376,11 +380,11 @@ final class Mist{
         if(!is_string($errstr)) $errstr = serialize($errstr);
         ob_start();
         debug_print_backtrace();
-        $vars = array(
+        $vars = [
             'message'   => "{$errno} {$errstr}",
             'position'  => "File:{$errfile}   Line:{$errline}",
             'trace'     => ob_get_clean(),//回溯信息
-        );
+        ];
         try{
             self::$_errors[] = Log::write($vars);
         }catch (\Exception $e){}
@@ -449,11 +453,11 @@ final class Mist{
 //        $trace = $e->getTrace();
         $traceString = $e->getTraceAsString();
         //错误信息
-        $vars = array(
+        $vars = [
             'message'   => get_class($e).' : '.iconv('gbk','utf-8',$e->getMessage()),
             'position'  => 'File:'.$e->getFile().'   Line:'.$e->getLine(),
             'trace'     => $traceString,//回溯信息，可能会暴露数据库等敏感信息
-        );
+        ];
         try{
             self::$_errors[] = Log::write($vars);
         }catch (\Exception $e){}
@@ -494,23 +498,23 @@ final class Mist{
      * @return array
      */
     public static function status($begin=NULL,$end=NULL,$accuracy=6){
-        static $_infos = array();
+        static $_infos = [];
         if(DEBUG_MODE_ON) {
             if(NULL === $begin){//参数1为NULL，返回全部
                 return $_infos;
             }elseif(NULL === $end){//参数1不为NULL参数2为NULL,设置$begin指向的状态
 //                Log::trace($begin,microtime(true),microtime());
-                return $_infos[$begin] = array(
+                return $_infos[$begin] = [
                     microtime(true),
                     memory_get_usage(),
-                );
+                ];
             }else{//参数1和参数2都不为NULl
 //                Log::trace($_infos,microtime(true));//
                 if(isset($_infos[$end])){
-                    return array(
+                    return [
                         1000*round($_infos[$end][0] - $_infos[$begin][0], $accuracy),
                         number_format(($_infos[$end][1] - $_infos[$begin][1]), $accuracy)
-                    );
+                    ];
                 }
             }
         }

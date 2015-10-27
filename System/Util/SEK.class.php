@@ -240,7 +240,7 @@ final class SEK {
      * @param array $params GET参数数组
      * @return string
      */
-    public static function url($url=null,array $params=array(),$mode=null){
+    public static function url($url=null,array $params=[],$mode=null){
         //解析参数中的$url
         if(!$url){
             return Router::create(null,null,null,$params,$mode);
